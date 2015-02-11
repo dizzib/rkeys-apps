@@ -1,0 +1,24 @@
+extend /template/keys
+
+include ../alphapad-r/mixin
+include ../numpad/mixin
+include ../speakbar/mixin
+
+append head
+  title megapad - right hand
+  +prevent-zoom()
+  +link('r.css')
+
+append layout
+  +alphapad-r
+  .key-cols-1
+    +keys('', '')
+    +keys('Up fa-arrow-up', 'Down fa-arrow-down', 'Left fa-arrow-left')
+  .key-cols-1
+    +keys('', '')
+    +keys('Page_Up PgUp', 'Page_Down PgDn', 'Right fa-arrow-right')
+  +numpad
+  +speakbar
+
+append script
+  +script('/speakbar.js')

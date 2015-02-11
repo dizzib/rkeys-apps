@@ -1,0 +1,28 @@
+@require 'mixin/keys'
+@require '../alphapad-r/mixin'
+@require '../numpad/mixin'
+@require '../speakbar/mixin'
+
+K = 23mm
+
+key-size(K)
+alphapad-r(K)
+numpad(K)
+speakbar()
+
+key-color(black, yellow)
+label-color(white, black)
+
+body
+  background  #222
+  color       white
+  font-family arial
+  width       K*20
+  > div
+    float     left
+
+.numpad
+  margin      0 0 K K*2
+
+.speakbar
+  background  green

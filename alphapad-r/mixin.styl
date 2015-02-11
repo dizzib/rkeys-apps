@@ -1,0 +1,16 @@
+alphapad-r(k)
+  .alphapad-r
+    for n in 1 2 3 // row indentations
+      .row-{n}
+        clear       both
+        margin-left n * k * 0.33
+
+    #BackSpace
+      width         k * 1.67
+    #Return
+      width         k * 2.33
+    #Shift_R
+      width         k * 3
+    #space
+      width         k * 4
+      margin-right  k
