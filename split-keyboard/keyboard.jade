@@ -1,0 +1,11 @@
+extend /template/keys
+
+append head
+  +prevent-zoom()
+  +link('speakbar.css')
+
+block layout
+  include ../speakbar/speakbar
+
+append script
+  +script('/speakbar.js')
