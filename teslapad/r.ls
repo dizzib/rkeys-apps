@@ -1,1 +1,1 @@
-require \../speakbar/speakbar.ls
+require \../mixin/speakbar.ls

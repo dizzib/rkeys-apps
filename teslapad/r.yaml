@@ -1,1 +1,1 @@
-include: ../firefox ../numpad
+include: ../mixin/firefox.yaml ../mixin/numpad.yaml
