@@ -1,0 +1,1 @@
+require \../speakbar/speakbar.ls
