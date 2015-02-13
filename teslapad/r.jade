@@ -1,5 +1,6 @@
 extend /template/keys
 
+include ../mixin/f1-f12
 include ../mixin/keyboard-r
 include ../mixin/numpad
 include ../mixin/speakbar
@@ -19,6 +20,8 @@ append layout
     +key('firefox-tab-next fa-caret-square-o-right')
     +keys('Page_Up PgUp', 'Page_Down PgDn', 'Right fa-arrow-right')
   +keyboard-r
+  .f1-f12.key-cols-4
+    +f1-f12
   +numpad
   +speakbar
   .desktop-switcher
