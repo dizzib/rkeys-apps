@@ -37,10 +37,10 @@ go-ted    : exec wmctrl -a TED
 kde-kicker : Super_R 250 Super_L+a
 kde-konsole: exec konsole
 
-vbox-full : Super_R+f
-vbox-menu : Super_R+m
-vbox-scale: Super_R+s
-vbox-seam : Super_R+l
+vbox-fullscreen : Super_R+f
+vbox-menu       : Super_R+m
+vbox-scale      : Super_R+s
+vbox-seamless   : Super_R+l
 
 vlc-fast-forward: C+S+f 100
 vlc-next        : C+S+n
