@@ -1,28 +1,18 @@
 @require 'mixin/keys'
+@require './base'
 @require '../mixin/keyboard-r'
 @require '../mixin/numpad'
 @require '../mixin/speakbar'
 
-K = 23mm
-
-key-size(K)
-alphapad-r(K)
+keyboard-r(K)
 numpad(K)
 speakbar()
-
-key-color(black, yellow)
-label-color(white, black)
-
-body
-  background  #222
-  color       white
-  font-family arial
-  width       K*20
-  > div
-    float     left
 
 .numpad
   margin      0 0 K K*2
 
 .speakbar
   background  green
+
+#vlc-play
+  width       k(2)

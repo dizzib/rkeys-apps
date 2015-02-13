@@ -1,0 +1,60 @@
+include: ../mixin/numpad.yaml
+
+desk-1: Super_R 100 A+S+F1
+desk-2: Super_R 100 A+S+F2
+desk-3: Super_R 100 A+S+F3
+desk-4: Super_R 100 A+S+F4
+
+edit-copy   : C+c
+edit-cut    : C+x
+edit-paste  : C+v
+edit-redo   : C+S+z
+edit-save   : C+s
+edit-select : Home S+End
+edit-undo   : C+z
+
+# default firefox shortcuts as defined by
+# https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly?redirectlocale=en-US&redirectslug=Keyboard+shortcuts
+firefox-nav-back      : A+Left
+firefox-nav-forward   : A+Right
+firefox-page-zoom-in  : C+plus
+firefox-page-zoom-out : C+minus
+firefox-tab-close     : C+F4
+firefox-tab-groups    : C+S+e
+firefox-tab-next      : C+Page_Down
+firefox-tab-previous  : C+Page_Up
+
+# firefox addons
+firefox-bym-invert: C+A+b
+
+go-herbert: exec wmctrl -a HERBERT
+go-kango  : exec wmctrl -a KANGO
+go-roo    : exec wmctrl -a ROO
+go-sandpit: exec wmctrl -a SANDPIT
+go-sweep  : exec wmctrl -a SWEEP
+go-ted    : exec wmctrl -a TED
+
+kde-kicker : Super_R 250 Super_L+a
+kde-konsole: exec konsole
+
+vbox-full : Super_R+f
+vbox-menu : Super_R+m
+vbox-scale: Super_R+s
+vbox-seam : Super_R+l
+
+vlc-fast-forward: C+S+f 100
+vlc-next        : C+S+n
+vlc-open-folder : C+f
+vlc-open-file   : C+o
+vlc-play        : C+S+g
+vlc-previous    : C+S+p
+vlc-rewind      : C+S+b 100
+vlc-stop        : C+S+s
+vlc-volume-down : C+S+d
+vlc-volume-up   : C+S+u
+
+window-close    : A+F4
+window-minimize : Super_L+m
+window-next     : A+Tab
+window-resize-h : Super_L+h
+window-resize-v : Super_L+v
