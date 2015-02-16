@@ -1,4 +1,4 @@
-include: ../mixin/numpad.yaml ./mixin/firefox.yaml
+include: ../mixin/numpad.yaml ./mixin/firefox.yaml ./mixin/vlc-player.yaml
 
 desk-1: Super_R 100 A+S+F1
 desk-2: Super_R 100 A+S+F2
@@ -27,18 +27,6 @@ vbox-fullscreen : Super_R+f
 vbox-menu       : Super_R+m
 vbox-scale      : Super_R+s
 vbox-seamless   : Super_R+l
-
-vlc-fast-forward: C+S+f
-vlc-fullscreen  : f
-vlc-next        : C+S+n
-vlc-open-folder : C+f
-vlc-open-file   : C+o
-vlc-play        : C+S+g
-vlc-previous    : C+S+p
-vlc-rewind      : C+S+b
-vlc-stop        : C+S+s
-vlc-volume-down : C+S+d
-vlc-volume-up   : C+S+u
 
 window-close    : A+F4
 window-minimize : Super_L+m
