@@ -1,0 +1,14 @@
+# default firefox shortcuts as defined by
+# https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly?redirectlocale=en-US&redirectslug=Keyboard+shortcuts
+firefox-fullscreen    : F11
+firefox-nav-back      : A+Left
+firefox-nav-forward   : A+Right
+firefox-page-zoom-in  : C+KP_Add
+firefox-page-zoom-out : C+KP_Subtract
+firefox-tab-close     : C+F4
+firefox-tab-groups    : C+S+e
+firefox-tab-next      : C+Page_Down
+firefox-tab-previous  : C+Page_Up
+
+# firefox addons
+firefox-bym-invert: C+A+b

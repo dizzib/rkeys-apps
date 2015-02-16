@@ -3,6 +3,7 @@ extend /template/keys
 include ../mixin/numpad
 include ../mixin/qwerty-r
 include ../mixin/speakbar
+include ./mixin/firefox
 include ./mixin/pad-1
 include ./mixin/pad-2
 include ./mixin/pad-3
@@ -23,6 +24,7 @@ append layout
       - for (var x=0; x<3; x++)
         - n = x + y
         +key('F' + n)
+  +firefox
   +vlc-player
   +numpad
   +speakbar
