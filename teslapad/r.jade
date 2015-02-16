@@ -6,6 +6,7 @@ include ../mixin/speakbar
 include ./mixin/pad-1
 include ./mixin/pad-2
 include ./mixin/pad-3
+include ./mixin/vlc-player
 
 append head
   title teslapad - right hand
@@ -22,6 +23,7 @@ append layout
       - for (var x=0; x<3; x++)
         - n = x + y
         +key('F' + n)
+  +vlc-player
   +numpad
   +speakbar
   .desk-switcher

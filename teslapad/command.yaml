@@ -42,13 +42,14 @@ vbox-menu       : Super_R+m
 vbox-scale      : Super_R+s
 vbox-seamless   : Super_R+l
 
-vlc-fast-forward: C+S+f 100
+vlc-fast-forward: C+S+f
+vlc-fullscreen  : f
 vlc-next        : C+S+n
 vlc-open-folder : C+f
 vlc-open-file   : C+o
 vlc-play        : C+S+g
 vlc-previous    : C+S+p
-vlc-rewind      : C+S+b 100
+vlc-rewind      : C+S+b
 vlc-stop        : C+S+s
 vlc-volume-down : C+S+d
 vlc-volume-up   : C+S+u
