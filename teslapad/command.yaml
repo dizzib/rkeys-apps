@@ -1,17 +1,13 @@
-include: ../mixin/numpad.yaml ./mixin/firefox.yaml ./mixin/vlc-player.yaml
+include:
+  ../mixin/numpad.yaml
+  ./mixin/edit.yaml
+  ./mixin/firefox.yaml
+  ./mixin/vlc-player.yaml
 
 desk-1: Super_R 100 A+S+F1
 desk-2: Super_R 100 A+S+F2
 desk-3: Super_R 100 A+S+F3
 desk-4: Super_R 100 A+S+F4
-
-edit-copy   : C+c
-edit-cut    : C+x
-edit-paste  : C+v
-edit-redo   : C+S+z
-edit-save   : C+s
-edit-select : Home S+End
-edit-undo   : C+z
 
 go-herbert: exec wmctrl -a HERBERT
 go-kango  : exec wmctrl -a KANGO
