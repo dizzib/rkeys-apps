@@ -1,6 +1,5 @@
 extend /template/keys
 
-include ../mixin/f1-f12
 include ../mixin/numpad
 include ../mixin/qwerty-r
 include ../mixin/speakbar
@@ -18,8 +17,11 @@ append layout
   +qwerty-r
   +pad-2
   +pad-3
-  .key-cols-4
-    +f1-f12
+  .f1-f12.key-cols-3
+    - for (var y=10; y>0; y-=3)
+      - for (var x=0; x<3; x++)
+        - n = x + y
+        +key('F' + n)
   +numpad
   +speakbar
   .desk-switcher
