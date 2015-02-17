@@ -8,6 +8,9 @@ numpad()
 qwerty-r(K)
 speakbar()
 
+.context > div
+  float     left
+
 .desk-switcher
   position    fixed
   right       0px
@@ -16,9 +19,16 @@ speakbar()
   opacity     0.5
   z-index     200
 
-.f1-f12, .firefox, .numpad, .vlc-player
+.f1-f12, .context, .numpad
   margin      0 0 K K
 
 .speakbar
   background  green
   padding     K * 0.05
+
+.edit
+  key-color(label-up:yellow)
+.firefox
+  key-color(label-up:orange)
+.vlc-player
+  key-color(label-up:cyan)
