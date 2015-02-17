@@ -1,20 +1,21 @@
 mixin vlc-player
   .vlc-player
-    .key-cols-3
+    .key-cols-4
       +key('Escape Esc')
       +key('vlc-ofil fa-file-video-o')
       +key('vlc-odir fa-folder-open-o')
+      +key('Return Enter')
 
-      +key('vlc-fullscreen fa-desktop')
+    .key-cols-3
       +key('vlc-volume-down fa-volume-down')
+      +key('vlc-stop fa-stop').w-2
       +key('vlc-volume-up fa-volume-up')
 
       +key('vlc-previous fa-step-backward')
-      +key('vlc-stop fa-stop')
+      +key('vlc-fullscreen fa-desktop').w-2
       +key('vlc-next fa-step-forward')
 
     .key-cols-3
       +key('vlc-back fa-backward').h-2
-      +key('vlc-play fa-play').h-2
+      +key('vlc-play fa-play').h-2.w-2
       +key('vlc-ffwd fa-forward').h-2
-
