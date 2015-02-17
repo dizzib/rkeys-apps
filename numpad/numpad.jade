@@ -1,0 +1,10 @@
+extend /template/keys
+
+include ../mixin/numpad
+
+append head
+  title numeric keypad
+  +link('numpad.css')
+
+append layout
+  +numpad
