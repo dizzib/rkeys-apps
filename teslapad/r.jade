@@ -22,17 +22,15 @@ append layout
   +edit
   +pad-3
   .f1-f12.key-cols-3
-    - for (var y=10; y>0; y-=3)
-      - for (var x=0; x<3; x++)
-        - n = x + y
-        +key('F' + n)
+    +keys('F10', 'F11', 'F12', 'F7', 'F8', 'F9')
+    +keys('F4', 'F5', 'F6', 'F1', 'F2', 'F3')
   .context
     +firefox
     +vlc-player
   +numpad
   +speakbar
   .desk-switcher
-    +keys('desk-1 D1','desk-2 D2', 'desk-3 D3','desk-4 D4')
+    +keys('desk-1 D1','desk-2 D2','desk-3 D3','desk-4 D4')
 
 append script
   +script('/r.js')
