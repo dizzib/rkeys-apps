@@ -3,9 +3,11 @@
 This is my experimental split virtual-keyboard which is customised
 to my own requirements and runs on a 8-inch tablet.
 
-You can dictate words and sentences and it will type them out for you.
+It incorporates [speakeys](../speakeys) with a [compact ui](../mixin/speakbar.jade)
+to let you dictate words and sentences and quickly review the result
+before transmitting to Linux.
 
-Feel free to fork and hack as required!
+Fork and hack as required :)
 
 ## to run
 

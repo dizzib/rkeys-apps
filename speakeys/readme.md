@@ -3,7 +3,8 @@
 I use this to transmit dictated speech from my tablet
 directly to my Linux desktop as if I were typing it in myself.
 
-Currently this functionality is supported only in [Google Chrome][chrome].
+Currently [Google Chrome][chrome] is the only browser to support
+speech recognition.
 
 ## to run
 
