@@ -1,0 +1,15 @@
+extend /template/base
+
+include ../mixin/speakeys
+
+append head
+  title speakeys
+  style
+    include:stylus ../mixin/speakeys.styl
+
+block layout
+  h1 speakeys
+  +speakeys
+
+append script
+  +script('speakeys.js')
