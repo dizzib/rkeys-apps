@@ -1,7 +1,7 @@
 ## speakeys
 
-I use this to transmit dictated speech from my tablet
-directly to my Linux desktop as if I were typing it in myself.
+Quickly review and transmit dictated speech from your tablet directly
+to Linux desktop as if typing it in yourself at the cursor.
 
 Currently [Google Chrome][chrome] is the only browser to support
 speech recognition.
