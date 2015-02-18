@@ -1,6 +1,6 @@
 ## numpad
 
-A quick example demonstrating a simple layout.
+A quick example of a simple layout.
 
 This app [pulls in](./numpad.jade) and [restyles](./numpad.styl)
 the [numpad mixin](../mixin/numpad.jade) (which is
