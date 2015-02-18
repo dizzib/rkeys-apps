@@ -1,7 +1,7 @@
 ok = (R = window.webkitSpeechRecognition)?
 return msg "Speech recognition not supported in this browser" unless ok
 
-$m = $ \.speakbar>.msg
+$m = $ \.speakeys>.msg
 socket = io!
 
 r = new R!
@@ -9,7 +9,7 @@ r = new R!
   ..onresult = -> msg it.results[*-1].0.transcript
   ..onstart  = -> msg 'Speak now!'
 
-$ \.speakbar>.send  .on \click -> socket.emit \keyseq, $m.text! / ''
-$ \.speakbar>.start .on \click -> r.start!
+$ \.speakeys>.send  .on \click -> socket.emit \keyseq, $m.text! / ''
+$ \.speakeys>.start .on \click -> r.start!
 
 function msg then $m.text it
