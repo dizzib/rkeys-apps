@@ -4,7 +4,7 @@ Various apps for [rkeys]:
 
 [numpad](./numpad) - a simple numeric keypad
 
-[speakeys](./speakeys) - dictate words and sentences directly into Linux
+[speakeys](./speakeys) - dictate words and sentences into Linux
 
 [teslapad](./teslapad) - a virtual split keyboard with speech recognition
 
