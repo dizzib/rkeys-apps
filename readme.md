@@ -11,6 +11,7 @@ Various apps for [rkeys]:
 ## download
 
     $ git clone https://github.com/dizzib/rkeys-apps.git
+    $ cd rkeys-apps
 
 
 [rkeys]: https://github.com/dizzib/rkeys
