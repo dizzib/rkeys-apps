@@ -20,4 +20,3 @@ then point your tablet browser to one of the following:
 left hand: TODO
 
 right hand: `http://your-rkeys-server-name-or-ip:7000/r`
-
