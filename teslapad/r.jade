@@ -16,22 +16,23 @@ append head
   +link('r.css')
 
 append layout
-  .layout-horizontal
-    +pad-1
+  +pad-1
+  .root.layout-horizontal
     +qwerty-r
     +pad-2
+    +show-if(activeWindowTitle='SWEEP')
+      +vlc-player
+    +show-if(activeWindowTitle='firefox|ROO|SWEEP')
+      +firefox
     +edit
     +pad-3
     .f1-f12.key-cols-3
       +keys('F10', 'F11', 'F12', 'F7', 'F8', 'F9')
       +keys('F4', 'F5', 'F6', 'F1', 'F2', 'F3')
-    .context.layout-horizontal
-      +firefox
-      +vlc-player
     +numpad
-    +speakbar
-    .desk-switcher
-      +keys('desk-1 D1','desk-2 D2','desk-3 D3','desk-4 D4')
+  +speakbar
+  .desk-switcher
+    +keys('desk-1 D1','desk-2 D2','desk-3 D3','desk-4 D4')
 
 append script
   +script('/r.js')
