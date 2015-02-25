@@ -3,6 +3,7 @@ extend /template/keys
 include ../mixin/numpad
 include ../mixin/qwerty-r
 include ../mixin/speakbar
+include ../mixin/typey
 include ./mixin/edit
 include ./mixin/firefox
 include ./mixin/pad-1
@@ -20,6 +21,7 @@ append layout
   .root.layout-horizontal
     +qwerty-r
     +pad-2
+    +typey
     +show-if(activeWindowTitle='SWEEP')
       +vlc-player
     +show-if(activeWindowTitle='firefox|Vimperator|HERBERT|ROO|SWEEP')
