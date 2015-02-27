@@ -1,6 +1,6 @@
 ## numpad
 
-A quick example of a simple layout.
+A quick example of a simple layout:
 
 ![screenshot](http://dizzib.github.io/rkeys/numpad.png)
 
