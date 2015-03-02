@@ -1,36 +1,60 @@
 const CONFIG =
-  origin:[267 148]
+  origin:[240 180]
 
   fingers:
+    index-l:
+      offset:[-80 +10]
+      keys:
+        * offset:[-20 -140] id:\6
+        * offset:[-20 -60] id:\y
+        * offset:[0 0] id:\h
+        * offset:[0 +80] id:\n
+
     index:
       offset:[0 0]
       keys:
+        * offset:[-20 -140] id:\7
+        * offset:[-20 -60] id:\u
         * offset:[0 0]    id:\j
-        * offset:[0 -100] id:\u
+        * offset:[0 +80] id:\m
 
     middle:
-      offset:[+162 -42]
+      offset:[+140 -42]
       keys:
+        * offset:[-20 -120] id:\8
+        * offset:[-20 -60] id:\i
         * offset:[0 0]    id:\k
-        * offset:[0 -100] id:\i
+        * offset:[-10 +70] id:\,
 
     ring:
       offset:[+244 +2]
       keys:
+        * offset:[0 -140] id:\9
+        * offset:[0 -60] id:\o
         * offset:[0 0]    id:\l
-        * offset:[0 -100] id:\o
+        * offset:[-10 +70] id:\.
 
     pinky:
-      offset:[+357 +116]
+      offset:[+357 +100]
       keys:
-        * offset:[0 0]    id:\;
-        * offset:[0 -100] id:\p
+        * offset:[0 -190] id:\0
+        * offset:[0 -90] id:\p
+        * offset:[0 0]   id:\;
+        * offset:[-20 +70] id:\/
+
+    pinky-r:
+      offset:[+440 +116]
+      keys:
+        * offset:[0 -120] id:\BackSpace
+        * offset:[0 -60] id:\[
+        * offset:[0 0]   id:\'
+        * offset:[-20 +50] id:\Shift_R
 
     thumb:
-      offset:[-109 +252]
+      offset:[-110 +220]
       keys:
-        * offset:[0 0]   id:\Space
-        * offset:[100 0] id:\Return
+        * offset:[0 0]   id:\space
+        * offset:[200 0] id:\Return
 
 module.exports.get-keys = ->
   keys = []

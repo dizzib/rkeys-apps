@@ -10,6 +10,14 @@ socket = io!
 keys = Config.get-keys!
 reset!
 
+down-key-ids = {}
+
+$ \.typey .on \touchend, ->
+  e = it.originalEvent
+  for t in e.changedTouches
+    socket.emit \keyup, down-key-ids[tid = t.identifier]
+    delete down-key-ids[tid]
+
 $ \.typey .on \touchstart, ->
   e = it.originalEvent
   reset! if is-reset = e.touches.length is 5
@@ -17,8 +25,9 @@ $ \.typey .on \touchstart, ->
     t.x = t.pageX - t.target.offsetLeft
     t.y = t.pageY - t.target.offsetTop
     k = find-nearest-key t.x, t.y
-    log k.id
-    #socket.emit \keydown, k.id
+    log k, t.identifier
+    down-key-ids[t.identifier] = k.id
+    socket.emit \keydown, k.id
   Canvas.plot-touches ts, \cyan
   false
 
@@ -27,4 +36,6 @@ function find-nearest-key x, y
 
 function reset
   Canvas.clear!
-  for k in keys then Canvas.plot-dot k.x, k.y, \white
+  for k in keys
+    Canvas.plot-dot k.x, k.y, \black
+    Canvas.print k.id, k.x, k.y, \white

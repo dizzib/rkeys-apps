@@ -13,3 +13,10 @@ module.exports = me =
 
   plot-touches: (touches, color) ->
     for t in touches then me.plot-dot t.x, t.y, color
+
+  print: (text, x, y, color) ->
+    size = if text.length < 3 then 25 else 18
+    context
+      ..font = "#{size}pt Calibri"
+      ..fillStyle = color
+      ..fillText text, x - (7 * text.length), y + 8
