@@ -1,6 +1,8 @@
 ## numpad
 
-A quick example of a simple layout.
+A quick example of a simple layout:
+
+![screenshot](http://dizzib.github.io/rkeys/numpad.png)
 
 This app [pulls in](./numpad.jade) and [restyles](./numpad.styl)
 the [numpad mixin](../mixin/numpad.jade) (which is
