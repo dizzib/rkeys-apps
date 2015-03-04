@@ -5,18 +5,18 @@ const CONFIG =
     index-l:
       offset:[-80 +10]
       keys:
-        * offset:[-20 -140] id:\6
-        * offset:[-20 -60] id:\y
+        * offset:[-10 -140] id:\6
+        * offset:[0 -70] id:\y
         * offset:[0 0] id:\h
-        * offset:[0 +80] id:\n
+        * offset:[20 +80] id:\n
 
     index:
-      offset:[0 0]
+      offset:[+20 0]
       keys:
-        * offset:[-20 -140] id:\7
-        * offset:[-20 -60] id:\u
+        * offset:[0 -140] id:\7
+        * offset:[-10 -70] id:\u
         * offset:[0 0]    id:\j
-        * offset:[0 +80] id:\m
+        * offset:[20 +80] id:\m
 
     middle:
       offset:[+140 -42]
@@ -43,18 +43,19 @@ const CONFIG =
         * offset:[-20 +70] id:\/
 
     pinky-r:
-      offset:[+440 +116]
+      offset:[+460 +116]
       keys:
         * offset:[0 -120] id:\BackSpace
-        * offset:[0 -60] id:\[
-        * offset:[0 0]   id:\'
-        * offset:[-20 +50] id:\Shift_R
+        #* offset:[0 -60] id:\[
+        #* offset:[0 0]   id:\'
+        * offset:[0 0] id:\Shift_R
+        #* offset:[-20 +50] id:\Shift_R
 
     thumb:
-      offset:[-110 +220]
+      offset:[-100 +220]
       keys:
         * offset:[0 0]   id:\space
-        * offset:[200 0] id:\Return
+        * offset:[250 0] id:\Return
 
 module.exports.get-keys = ->
   keys = []

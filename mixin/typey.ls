@@ -25,9 +25,10 @@ $ \.typey .on \touchstart, ->
     t.x = t.pageX - t.target.offsetLeft
     t.y = t.pageY - t.target.offsetTop
     k = find-nearest-key t.x, t.y
-    log k, t.identifier
     down-key-ids[t.identifier] = k.id
-    socket.emit \keydown, k.id
+    dx = Math.round t.x - k.x
+    dy = Math.round t.y - k.y
+    socket.emit \keydown, k.id, { dx:dx, dy:dy }
   Canvas.plot-touches ts, \cyan
   false
 
@@ -37,5 +38,5 @@ function find-nearest-key x, y
 function reset
   Canvas.clear!
   for k in keys
-    Canvas.plot-dot k.x, k.y, \black
+    Canvas.plot-dot k.x, k.y, 20, \red
     Canvas.print k.id, k.x, k.y, \white
