@@ -9,6 +9,13 @@ before transmitting to Linux.
 
 Fork and hack as required :)
 
+## screenshots
+
+![screenshot-1](http://dizzib.github.io/rkeys/teslapad/1.png)
+![screenshot-2](http://dizzib.github.io/rkeys/teslapad/2.png)
+![screenshot-3](http://dizzib.github.io/rkeys/teslapad/3.png)
+![screenshot-4](http://dizzib.github.io/rkeys/teslapad/4.png)
+
 ## to run
 
 From your rkeys-apps directory:
