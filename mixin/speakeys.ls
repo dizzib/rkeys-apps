@@ -8,13 +8,13 @@ r = new R!
   ..onend = ->
     socket.emit \keydown, \speakeys-onend
 
-  ..onerror  = ->
+  ..onerror = ->
     msg "Error: #{it.error}"
 
   ..onresult = ->
     msg it.results[*-1].0.transcript
 
-  ..onstart  = ->
+  ..onstart = ->
     socket.emit \keydown, \speakeys-onstart
     msg 'Speak now!'
 
