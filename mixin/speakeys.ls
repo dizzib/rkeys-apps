@@ -5,9 +5,18 @@ $m = $ \.speakeys>.msg
 socket = io!
 
 r = new R!
-  ..onerror  = -> msg "Error: #{it.error}"
-  ..onresult = -> msg it.results[*-1].0.transcript
-  ..onstart  = -> msg 'Speak now!'
+  ..onend = ->
+    socket.emit \keydown, \speakeys-onend
+
+  ..onerror  = ->
+    msg "Error: #{it.error}"
+
+  ..onresult = ->
+    msg it.results[*-1].0.transcript
+
+  ..onstart  = ->
+    socket.emit \keydown, \speakeys-onstart
+    msg 'Speak now!'
 
 $ \.speakeys>.send  .on \click -> socket.emit \keyseq, $m.text! / ''
 $ \.speakeys>.start .on \click -> r.start!

@@ -1,0 +1,3 @@
+# hooks for shell exec
+speakeys-onstart: nop
+speakeys-onend  : nop
