@@ -1,2 +1,2 @@
-require \../mixin/speakeys.ls
+require \../speakeys/speakeys.ls
 require \../mixin/typey.ls
