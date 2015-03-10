@@ -1,6 +1,6 @@
 include:
   ../numpad/command.yaml
-  ../mixin/speakeys.yaml
+  ../speakeys/command.yaml
   ./mixin/edit.yaml
   ./mixin/firefox.yaml
   ./mixin/vlc-player.yaml
