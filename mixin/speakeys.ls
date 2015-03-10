@@ -26,6 +26,7 @@ $ \.speakeys>.send
   ..on \touchstart ->
     socket.emit \keyseq, $m.text! / ''
     longclick-timeout := setTimeout (-> socket.emit \keyseq, <[ Return ]>), 750ms
+    false
 
 $ \.speakeys>.start .on \click -> r.start!
 
