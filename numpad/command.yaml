@@ -1,2 +1,2 @@
-# numpad macros
-'00': 0 0
+# short delay increases reliability
+'00': 0 20 0
