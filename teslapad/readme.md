@@ -5,7 +5,7 @@ to my own requirements and runs on a 8-inch tablet.
 
 It brings together the following:
 
-  - [speakbar](../speakeys) lets you dictate sentences and quickly review the result
+  - [speakeys](../speakeys) lets you dictate sentences and quickly review the result
     before transmitting to Linux
   - [qwerty](../qwerty) - a split standard qwerty keyboard
   - [typey](../typey) - an experimental qwerty keyboard
