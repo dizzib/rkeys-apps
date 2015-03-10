@@ -11,13 +11,9 @@ Notice how it makes use of the
 and [keys classes](https://github.com/dizzib/rkeys/tree/master/site/ui/mixin/keys.styl)
 provided by [rkeys].
 
-## to run
+## url
 
-From your rkeys-apps directory:
-
-    $ rkeys ./numpad
-
-then point your tablet browser to `http://your-rkeys-server-name-or-ip:7000/numpad`
+`http://your-rkeys-server-name-or-ip:7000/numpad`
 
 
 [rkeys]: https://github.com/dizzib/rkeys

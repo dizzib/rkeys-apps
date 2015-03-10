@@ -6,7 +6,7 @@ to my own requirements and runs on a 8-inch tablet.
 It brings together the following:
 
   - [speakbar](../speakeys) lets you dictate sentences and quickly review the result
-    before transmitting to Linux.
+    before transmitting to Linux
   - [qwerty](../qwerty) - a split standard qwerty keyboard
   - [typey](../typey) - an experimental qwerty keyboard
   - a restyled [numpad](../numpad)
@@ -20,13 +20,7 @@ Fork and hack as required :)
 ![screenshot-3](http://dizzib.github.io/rkeys/teslapad/3.png)
 ![screenshot-4](http://dizzib.github.io/rkeys/teslapad/4.png)
 
-## to run
-
-From your rkeys-apps directory:
-
-    $ rkeys teslapad
-
-then point your tablet browser to one of the following:
+## urls
 
 left hand: TODO
 

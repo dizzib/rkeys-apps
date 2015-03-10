@@ -6,13 +6,8 @@ to Linux desktop as if typing it in yourself at the cursor.
 Currently [Google Chrome][chrome] is the only browser to support
 speech recognition.
 
-## to run
+## url
 
-From your rkeys-apps directory:
-
-    $ rkeys speakeys
-
-then point your tablet's [Chrome browser][chrome] to
 `http://your-rkeys-server-name-or-ip:7000/speakeys`
 
 
