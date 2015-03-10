@@ -3,9 +3,13 @@
 This is my experimental split virtual-keyboard which is customised
 to my own requirements and runs on a 8-inch tablet.
 
-It incorporates [speakeys](../speakeys) with a [compact ui](../mixin/speakbar.jade)
-to let you dictate words and sentences and quickly review the result
-before transmitting to Linux.
+It brings together the following:
+
+  - [speakbar](../speakeys) lets you dictate sentences and quickly review the result
+    before transmitting to Linux.
+  - [qwerty](../qwerty) - a split standard qwerty keyboard
+  - [typey](../typey) - an experimental qwerty keyboard
+  - a restyled [numpad](../numpad)
 
 Fork and hack as required :)
 
