@@ -18,7 +18,15 @@ r = new R!
     socket.emit \keydown, \speakeys-onstart
     msg 'Speak now!'
 
-$ \.speakeys>.send  .on \click -> socket.emit \keyseq, $m.text! / ''
+var longclick-timeout
+$ \.speakeys>.send
+  ..on \touchend ->
+    clearTimeout longclick-timeout
+
+  ..on \touchstart ->
+    socket.emit \keyseq, $m.text! / ''
+    longclick-timeout := setTimeout (-> socket.emit \keyseq, <[ Return ]>), 750ms
+
 $ \.speakeys>.start .on \click -> r.start!
 
 function msg then $m.text it
