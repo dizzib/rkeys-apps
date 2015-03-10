@@ -1,11 +1,13 @@
 extend /template/base
 
-include ../mixin/speakeys
+include ./mixin
 
 append head
   title speakeys
   style
-    include:stylus ../mixin/speakeys.styl
+    :stylus
+      @require './mixin'
+      speakeys()
 
 block layout
   h1 speakeys
