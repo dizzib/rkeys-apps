@@ -1,5 +1,5 @@
 include:
-  ../mixin/numpad.yaml
+  ../numpad/command.yaml
   ../mixin/speakeys.yaml
   ./mixin/edit.yaml
   ./mixin/firefox.yaml

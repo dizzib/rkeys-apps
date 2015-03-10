@@ -4,9 +4,7 @@ A quick example of a simple layout:
 
 ![screenshot](http://dizzib.github.io/rkeys/numpad.png)
 
-This app [pulls in](./numpad.jade) and [restyles](./numpad.styl)
-the [numpad mixin](../mixin/numpad.jade) (which is
-also used and restyled by [teslapad](../teslapad)).
+The [core mixin](./mixin.jade) can be used and resyled by [other apps](../teslapad).
 
 Notice how it makes use of the
 [keys mixin](https://github.com/dizzib/rkeys/tree/master/site/ui/mixin/keys.jade)
@@ -17,7 +15,7 @@ provided by [rkeys].
 
 From your rkeys-apps directory:
 
-    $ rkeys numpad
+    $ rkeys ./numpad
 
 then point your tablet browser to `http://your-rkeys-server-name-or-ip:7000/numpad`
 
