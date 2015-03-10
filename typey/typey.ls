@@ -3,8 +3,8 @@
 # 'illegal invocation' errors, since console.log expects 'this' to be console.
 window.log = -> console.log ...&
 
-Canvas = require \./typey/canvas.ls
-Config = require \./typey/config.ls
+Canvas = require \./canvas.ls
+Config = require \./config.ls
 
 socket = io!
 keys = Config.get-keys!
