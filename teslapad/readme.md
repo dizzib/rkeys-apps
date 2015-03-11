@@ -24,4 +24,4 @@ Fork and hack as required :)
 
 left hand: TODO
 
-right hand: `http://your-rkeys-server-name-or-ip:7000/r`
+right hand: `http://your-rkeys-server:7000/r`

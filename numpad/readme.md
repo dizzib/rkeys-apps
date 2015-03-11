@@ -13,7 +13,7 @@ provided by [rkeys].
 
 ## url
 
-`http://your-rkeys-server-name-or-ip:7000/numpad`
+`http://your-rkeys-server:7000/numpad`
 
 
 [rkeys]: https://github.com/dizzib/rkeys

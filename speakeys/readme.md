@@ -8,7 +8,7 @@ speech recognition.
 
 ## url
 
-`http://your-rkeys-server-name-or-ip:7000/speakeys`
+`http://your-rkeys-server:7000/speakeys`
 
 
 [chrome]: https://www.google.com/chrome/browser/mobile/index.html
