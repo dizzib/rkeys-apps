@@ -1,9 +1,7 @@
 ## teslapad
 
-This is my experimental split virtual-keyboard which is customised
-to my own requirements and runs on a 8-inch tablet.
-
-It brings together the following:
+This is my experimental split virtual-keyboard which is customised to my own
+requirements and runs on a 8-inch tablet. It brings together the following:
 
   - [speakeys](../speakeys) lets you dictate sentences and quickly review the result
     before transmitting to Linux
