@@ -3,6 +3,8 @@
 Quickly review and transmit dictated speech from your tablet
 to Linux desktop as if typing it in yourself at the cursor.
 
+![screenshot](http://dizzib.github.io/rkeys/secure-2.png)
+
 Currently [Google Chrome][chrome] is the only browser to support
 speech recognition.
 
