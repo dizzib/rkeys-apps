@@ -1,15 +1,7 @@
-// standard ui
 mixin speakeys
-  .speakeys
-    button.start Start
-    button.send Send (hold to enter)
-    .msg Press 'start' to begin. Press 'send' to transmit the text to rkeys.
-
-// compact horizontal ui
-mixin speakbar
-  .speakbar.speakeys.layout-horizontal
-    .start
+  .speakeys.layout-horizontal
+    .button.start
       i.fa.fa-4x.fa-microphone
-    .send
+    .button.send
       i.fa.fa-4x.fa-check
-    .msg Press the microphone icon to begin
+    .msg Press the microphone icon to begin.
