@@ -1,33 +1,42 @@
 ok = (R = window.webkitSpeechRecognition)?
-return msg "Speech recognition not supported in this browser" unless ok
+return buffer "Speech recognition not supported in this browser" unless ok
 
-$m = $ \.speakeys>.msg
+$b = $ \.speakeys>.buffer
+$s = $ \.speakeys>.start
+$t = $ \.speakeys>.transmit
+
 socket = io!
 
 r = new R!
   ..onend = ->
     socket.emit \keydown, \speakeys-onend
+    enable-button $s
 
   ..onerror = ->
-    msg "Error: #{it.error}"
+    buffer "Error: #{it.error}"
 
   ..onresult = ->
-    msg it.results[*-1].0.transcript
+    buffer it.results[*-1].0.transcript
+    enable-button $t
 
   ..onstart = ->
+    enable-button $s, false
+    enable-button $t, false
     socket.emit \keydown, \speakeys-onstart
-    msg 'Speak now!'
+    buffer 'Speak now!'
 
 var longclick-timeout
-$ \.speakeys>.send
+$t
   ..on \touchend ->
     clearTimeout longclick-timeout
 
   ..on \touchstart ->
-    socket.emit \keyseq, $m.text! / ''
+    socket.emit \keyseq, $b.text! / ''
     longclick-timeout := setTimeout (-> socket.emit \keyseq, <[ Return ]>), 750ms
     false
 
-$ \.speakeys>.start .on \click -> r.start!
+$s.on \click -> r.start!
 
-function msg then $m.text it
+function buffer then $b.text it
+
+function enable-button $el, enabled = true then $el.toggleClass \disabled, not enabled
