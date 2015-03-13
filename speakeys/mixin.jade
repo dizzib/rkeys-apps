@@ -1,8 +1,13 @@
 mixin speakeys
-  .speakeys.layout-horizontal
-    .button.start
-      i.fa.fa-4x.fa-microphone
-    .button.transmit.disabled
-      i.fa.fa-4x.fa-check
-    .text.buffer .
-    .text.prompt Press the microphone icon to begin.
+  .speakeys
+    .unavailable.layout-horizontal
+      .button
+        i.fa.fa-4x.fa-microphone-slash
+      .text Speech recognition not supported in this browser.
+    .available.layout-horizontal
+      .button.start
+        i.fa.fa-4x.fa-microphone
+      .button.transmit.disabled
+        i.fa.fa-4x.fa-check
+      .text.buffer .
+      .text.prompt Press the microphone icon to begin. Hold the tick icon to enter.

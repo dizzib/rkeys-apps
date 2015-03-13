@@ -1,10 +1,12 @@
-$b = $ \.speakeys>.buffer
-$p = $ \.speakeys>.prompt
-$s = $ \.speakeys>.start
-$t = $ \.speakeys>.transmit
+return unless (R = window.webkitSpeechRecognition)?
 
-ok = (R = window.webkitSpeechRecognition)?
-return text $p, "Speech recognition not supported in this browser" unless ok
+$ \.speakeys>.unavailable .hide!
+$ \.speakeys>.available .show!
+
+$b = $ '.speakeys .buffer'
+$p = $ '.speakeys .prompt'
+$s = $ '.speakeys .start'
+$t = $ '.speakeys .transmit'
 
 socket = io!
 
