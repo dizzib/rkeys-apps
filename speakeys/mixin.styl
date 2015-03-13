@@ -5,7 +5,7 @@
     display       none
   .button
     margin-right  1em
-  .disabled
+  .button:not(.enabled)
     opacity       0.5
   .text
     font-size     18pt
@@ -16,4 +16,9 @@ speakeys()
       font-size   20pt
     .text
       clear       both
-      margin-top  2em
+      margin-top  1em
+      padding     1em
+  .speakeys.live
+    .text
+      background  red
+      color       white
