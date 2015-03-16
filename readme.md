@@ -13,14 +13,15 @@ Various apps for [rkeys]:
     $ git clone https://github.com/dizzib/rkeys-apps.git
     $ cd rkeys-apps
 
-## run
+## host
 
-To run all apps simultaneously:
+To host all apps simultaneously on default port 7000:
 
     $ rkeys */
 
-Alternatively run each app separately with `$ rkeys {dir}` where `{dir}`
-is the app name e.g. `$ rkeys numpad`.
+Alternatively pass a list of apps to host e.g:
+
+    $ rkeys ./numpad ./speakeys
 
 See individual app's readme for where to point your browser.
 
