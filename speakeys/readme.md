@@ -5,7 +5,7 @@ to Linux desktop as if typing it in yourself at the cursor.
 
 ![screenshot](http://dizzib.github.io/rkeys/speakeys.png)
 
-Currently [Google Chrome][chrome] is the only browser to support speech recognition.
+Currently [google chrome][chrome] is the only browser to support speech recognition.
 
 ## to always allow microphone without confirmation (on Android)
 
@@ -13,8 +13,8 @@ Currently [Google Chrome][chrome] is the only browser to support speech recognit
     $ cd ~/ssl      # or any empty directory
     $ rkeys -g      # generate ssl certificate using openssl. Follow the prompts.
 
-Copy the `cert.crt` onto your android device either via `/sdcard` or google drive,
-and install it via `Settings -> Security -> Install from storage`
+Copy the `cert.crt` onto your android device either via `/sdcard` or
+[google drive][gdrive] and install it via `Settings -> Security -> Install from storage`
 (based on [this article](https://coderwall.com/p/wv6fpq/add-self-signed-ssl-certificate-to-android-for-browsing)).
 You may also need to activate the screen lock via `Settings -> Security -> Screen lock`.
 
@@ -31,4 +31,5 @@ confirm the security exception the first time in.
 
 
 [chrome]: https://www.google.com/chrome/browser/mobile/index.html
+[gdrive]: https://www.google.com/drive/
 [rkeys]: https://github.com/dizzib/rkeys
