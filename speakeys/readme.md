@@ -7,6 +7,10 @@ to Linux desktop as if typing it in yourself at the cursor.
 
 Currently [google chrome][chrome] is the only browser to support speech recognition.
 
+## url
+
+`http://your-rkeys-server:7000/speakeys`
+
 ## to always allow microphone without confirmation (on Android)
 
     $ mkdir ~/ssl   # or any directory of your choosing
@@ -24,10 +28,6 @@ Now host speakeys over https:
 
 Finally browse your tablet to `https://your-rkeys-server:7001/speakeys` and
 confirm the security exception the first time in.
-
-## url
-
-`http://your-rkeys-server:7000/speakeys`
 
 
 [chrome]: https://www.google.com/chrome/browser/mobile/index.html
