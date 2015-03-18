@@ -31,9 +31,8 @@ confirm the security exception the first time in.
 
 ## microphone event hooks
 
-You can configure rkeys to do stuff when the microphone starts or stops
-listening by overriding the no-operation (nop) commands in the
-[default command.yaml](./command.yaml).
+You can configure rkeys to do stuff when the microphone starts or stops listening
+by overriding the no-operation (nop) commands in the [command.yaml](./command.yaml).
 For example, here is my custom command.yaml which conveniently pauses
 [simon speech recognition][simon] while speakeys is listening:
 
