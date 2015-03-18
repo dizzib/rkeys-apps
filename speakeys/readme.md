@@ -29,7 +29,22 @@ Now host speakeys over https:
 Finally browse your tablet to `https://your-rkeys-server:7001/speakeys` and
 confirm the security exception the first time in.
 
+## microphone event hooks
+
+You can configure rkeys to do stuff when the microphone starts or stops
+listening by overriding the no-operation (nop) commands in the
+[default command.yaml](./command.yaml).
+For example, here is my custom command.yaml which conveniently pauses
+[simon speech recognition][simon] while speakeys is listening:
+
+    speakeys-onstart: exec qdbus-qt4 org.kde.simon /ActionManager triggerCommand 'Filter' 'pause' > /dev/null
+    speakeys-onend: exec qdbus-qt4 org.kde.simon /ActionManager triggerCommand 'Filter' 'resume' > /dev/null
+
+Place your custom command.yaml in its own directory, then pass this directory
+on the rkeys command line as the final argument.
+
 
 [chrome]: https://www.google.com/chrome/browser/mobile/index.html
 [gdrive]: https://www.google.com/drive/
 [rkeys]: https://github.com/dizzib/rkeys
+[simon]: https://projects.kde.org/projects/extragear/accessibility/simon
