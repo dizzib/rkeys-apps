@@ -1,0 +1,21 @@
+@require 'mixin/keys'
+@require './base'
+@require '../qwerty/mixin'
+
+qwerty-l(K)
+
+.f1-f12
+  margin-right K
+
+.pad-2
+  background  #222
+  position    fixed
+  right       0
+  z-index     50
+
+.root
+  float       right
+  > div
+    margin-right  K
+  .qwerty-l
+    margin-right  2 * K

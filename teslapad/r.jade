@@ -7,9 +7,7 @@ include ../typey/mixin
 include ./mixin/edit
 include ./mixin/firefox
 include ./mixin/pad-1
-include ./mixin/pad-2
 include ./mixin/pad-3
-include ./mixin/vlc-player
 
 append head
   title teslapad - right hand
@@ -20,17 +18,10 @@ append layout
   +pad-1
   .root.layout-horizontal
     +qwerty-r
-    +pad-2
-    +typey
-    +show-if(activeWindowTitle='SWEEP')
-      +vlc-player
     +show-if(activeWindowTitle='firefox|Vimperator|HERBERT|ROO|SWEEP')
       +firefox
     +edit
     +pad-3
-    .f1-f12.key-cols-3
-      +keys('F10', 'F11', 'F12', 'F7', 'F8', 'F9')
-      +keys('F4', 'F5', 'F6', 'F1', 'F2', 'F3')
     +numpad
   +speakeys
   .desk-switcher

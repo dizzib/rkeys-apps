@@ -1,3 +1,21 @@
+mixin qwerty-l
+  .qwerty-l.layout-vertical
+    .row-0
+      +key('Escape').w-2
+      +keys(1, 2, 3, 4, 5)
+    .row-1
+      +key('Tab').w-2
+      +keys('q', 'w', 'e', 'r', 't')
+    .row-2
+      +key('Control_L Ctrl').w-2
+      +keys('a', 's', 'd', 'f', 'g')
+    .row-3
+      +key('Shift_L Shift').w-2
+      +keys('z', 'x', 'c', 'v', 'b')
+    .row-4
+      +keys('Delete Del', 'Super_R Super', 'Alt_R Alt')
+      +key('space', ' ').w-4
+
 mixin qwerty-r
   .qwerty-r.layout-verticaly
     .row-0

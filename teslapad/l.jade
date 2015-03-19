@@ -1,0 +1,21 @@
+extend /template/keys
+
+include ../qwerty/mixin
+include ./mixin/edit
+include ./mixin/pad-2
+include ./mixin/vlc-player
+
+append head
+  title teslapad - left hand
+  +prevent-zoom
+  +css('l.css')
+
+append layout
+  +pad-2
+  .root.layout-horizontal
+    .f1-f12.key-cols-3
+      +keys('F10', 'F11', 'F12', 'F7', 'F8', 'F9')
+      +keys('F4', 'F5', 'F6', 'F1', 'F2', 'F3')
+    +show-if(activeWindowTitle='SWEEP')
+      +vlc-player
+    +qwerty-l
