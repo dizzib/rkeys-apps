@@ -5,7 +5,7 @@ requirements and runs on a 8-inch tablet. It brings together the following:
 
   - [speakeys](../speakeys) lets you dictate sentences and quickly review the result
     before transmitting to Linux
-  - [qwerty](../qwerty) - a split standard qwerty keyboard
+  - [qwerty](../keyboard/standard/qwerty) - a split standard qwerty keyboard
   - a restyled [numpad](../numpad)
 
 Fork and hack as required :)
