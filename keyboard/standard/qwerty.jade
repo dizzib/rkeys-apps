@@ -2,31 +2,31 @@ mixin qwerty-l
   .qwerty-l.layout-vertical
     .row-0
       +key('Escape').w-2
-      +keys(1, 2, 3, 4, 5)
+      +keys('1 2 3 4 5')
     .row-1
       +key('Tab').w-2
-      +keys('q', 'w', 'e', 'r', 't')
+      +keys('q w e r t')
     .row-2
       +key('Control_L Ctrl').w-2
-      +keys('a', 's', 'd', 'f', 'g')
+      +keys('a s d f g')
     .row-3
       +key('Shift_L Shift').w-3
-      +keys('z', 'x', 'c', 'v', 'b')
+      +keys('z x c v b')
     .row-4
       +key('Super_L Super').w-2
       +key('Alt_R Alt').w-2
       +key('space', ' ').w-4
 
 mixin qwerty-r
-  .qwerty-r.layout-verticaly
+  .qwerty-r.layout-vertical
     .row-0
-      +keys(6, 7, 8, 9, 0, '-', '=', '\\', '`')
+      +keys('6 7 8 9 0 - = \\ `')
     .row-1
-      +keys('y', 'u', 'i', 'o', 'p', '[', ']', 'BackSpace Bksp')
+      +keys('y u i o p [ ]', 'BackSpace Bksp')
     .row-2
-      +keys('h', 'j', 'k', 'l', ';', '\'', 'Return')
+      +keys('h j k l ; \' Return')
     .row-3
-      +keys('n', 'm', ',', '.', '/')
+      +keys('n m , . /')
       +key('Shift_R Shift').w-3
     .row-4
       +key('space', ' ').w-4
