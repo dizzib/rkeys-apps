@@ -1,4 +1,3 @@
-log = -> console.log ...&
 return unless (R = window.webkitSpeechRecognition)?
 
 $ \.speakeys>.unavailable .hide!
