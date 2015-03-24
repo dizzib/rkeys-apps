@@ -1,21 +1,27 @@
+fingers(k, angle)
+  .fingers
+    transform   rotate(angle)
+    .col-0
+      margin-top  k * 0.5
+    .col-1
+    .col-3
+      margin-top  k * 0.33
+    .col-4
+      margin-top  k * 0.75
+    {block}
+
 qwerty-l(k)
   .qwerty-l
     key-size(k)
-    .fingers
-      margin-left k * 0.35
-      transform   rotate(10deg)
-      .col-0
-        margin-top  k * 0.75
-      .col-1
-      .col-3
-        margin-top  k * 0.33
-      .col-4
-        margin-top  k * 0.5
+    +fingers(k, 10deg)
+      margin-left k * 0.25
+      .layout > div
+        float       right
     .thumb
       float       right
 
 qwerty-r(k)
   .qwerty-r
-    for n in 1 2 3
-      .row-{n}
-        margin-left n * k * 0.33
+    key-size(k)
+    +fingers(k, -10deg)
+      margin-right  k * 0.25
