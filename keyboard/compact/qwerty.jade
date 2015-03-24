@@ -23,12 +23,12 @@ mixin qwerty-l
         +key('_').h-2
         +key('*').h-2
     .thumb
-      .layout.default
-        +key('BackSpace bksp').h-2
-      .layout.1
-        +key('Delete del').h-2
       +key('layout-1 fn').h-2.w-2
       +key('Escape esc').h-2.w-2
+      .layout.default
+        +key('BackSpace bksp').h-2.w-2
+      .layout.1
+        +key('Delete del').h-2.w-2
 
 mixin qwerty-r
   .qwerty-r.vertical
@@ -51,6 +51,6 @@ mixin qwerty-r
         +key('*').w-2.h-2
         +key('$').w-2.h-2
     .thumb
-      +key('space', ' ').h-2
       +key('layout-1 fn').h-2.w-2
+      +key('space', ' ').h-2.w-2
       +key('Return enter').h-2.w-2
