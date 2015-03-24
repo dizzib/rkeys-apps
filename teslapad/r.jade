@@ -3,7 +3,6 @@ extend /template/keys
 include ../keyboard/standard/qwerty
 include ../keyboard/compact/qwerty
 include ../numpad/mixin
-include ../speakeys/mixin
 include ./mixin/edit
 include ./mixin/firefox
 include ./mixin/pad-1
@@ -23,12 +22,6 @@ append layout
     +edit
     +pad-3
     +numpad
-  +speakeys
   .desk-switcher
     +key('B3', 'fa-hand-o-down fa-flip-horizontal')
     +keys('desk-1 D1','desk-2 D2','desk-3 D3','desk-4 D4')
-
-append script
-  +script('/r.js')
-  // include:LiveScript \../mixin/speakeys.ls
-  // pending https://github.com/jadejs/jade/issues/939

@@ -2,6 +2,7 @@ extend /template/keys
 
 include ../keyboard/standard/qwerty
 include ../keyboard/compact/qwerty
+include ../speakeys/mixin
 include ./mixin/edit
 include ./mixin/pad-2
 include ./mixin/vlc-player
@@ -20,3 +21,9 @@ append layout
     +show-if(activeWindowTitle='SWEEP')
       +vlc-player
     +qwerty-l
+  +speakeys
+
+append script
+  +script('/base.js')
+  // include:LiveScript \../speakeys/mixin.ls
+  // pending https://github.com/jadejs/jade/issues/939

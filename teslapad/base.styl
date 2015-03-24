@@ -11,8 +11,27 @@ body
   font-family arial
   width       30 * K
 
+.qwerty-l
+.qwerty-r
+  .thumb
+    position    relative
+    opacity     0.5
+    z-index     150
+
 .root
   height      6 * K
+
+.speakeys
+  background  green
+  padding     K * 0.05
+  position    fixed
+  left        0px
+  bottom      0px
+  z-index     100
+.speakeys.error
+  background  red
+.speakeys.live
+  background  orange
 
 .edit
   key-color(label-up:yellow)

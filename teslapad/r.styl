@@ -2,10 +2,8 @@
 @require './base'
 @require '../keyboard/standard/qwerty'
 @require '../keyboard/compact/qwerty'
-@require '../speakeys/mixin'
 
 qwerty-r(K)
-speakbar()
 
 .desk-switcher
   position    fixed
@@ -13,7 +11,7 @@ speakbar()
   bottom      0px
   height      K
   opacity     0.5
-  z-index     200
+  z-index     100
 
 .numpad
   margin-left K
@@ -21,25 +19,5 @@ speakbar()
 .pad-1
   background  #222
   position    fixed
+  right       0
   z-index     50
-
-.qwerty-r
-  .thumb
-    position    relative
-    opacity     0.5
-    z-index     150
-
-.root
-  margin-left 2 * K
-
-.speakeys
-  background  green
-  padding     K * 0.05
-  position    fixed
-  left        0px
-  bottom      0px
-  z-index     100
-.speakeys.error
-  background  red
-.speakeys.live
-  background  orange

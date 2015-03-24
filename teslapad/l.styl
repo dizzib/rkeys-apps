@@ -2,13 +2,14 @@
 @require './base'
 @require '../keyboard/standard/qwerty'
 @require '../keyboard/compact/qwerty'
+@require '../speakeys/mixin'
 
 qwerty-l(K + 1)
+speakbar()
 
 .pad-2
   background  #222
   position    fixed
-  right       0
   z-index     50
 
 .root
@@ -16,4 +17,4 @@ qwerty-l(K + 1)
   > div
     margin-right  K
   .qwerty-l
-    margin-right  2 * K
+    margin-right  0
