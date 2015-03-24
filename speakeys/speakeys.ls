@@ -35,7 +35,7 @@ r.onstart = ->
   enable-button $l, false
   enable-button $t, false
   socket.emit \keydown, \speakeys-onstart
-  text $p, 'Speak now!'
+  text $p, 'Google is listening!'
 
 $l.on \click ->
   return unless $l.hasClass \enabled
