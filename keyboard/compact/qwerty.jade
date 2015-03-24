@@ -1,19 +1,19 @@
 mixin layout(id, cols)
-  .layout-horizontal.layout(class=id)
+  .horizontal.layout(class=id)
     each col, i in cols
       .key-cols-1(class='col-' + i)
         +keys(col)
 
 mixin qwerty-l
-  .qwerty-l.layout-vertical
-    .layout-horizontal
-      .layout-vertical
+  .qwerty-l.vertical
+    .horizontal
+      .vertical
         +key('Tab').w-2
         +key('Shift_L Shift').w-2.h-3
       .fingers
         +layout('default', [ 'q a z', 'w s x', 'e d c', 'r f v', 't g b' ])
         +layout(1, [ '! 1 \\', '@ 2 ~', '# 3 `', '$ 4 {', '% 5 }' ])
-      .layout-vertical
+      .vertical
         +key('Delete Del')
     .thumb
       +key('Escape Esc').h-2.w-2
@@ -21,7 +21,7 @@ mixin qwerty-l
       +key('BackSpace Bksp').h-2
 
 mixin qwerty-r
-  .qwerty-r.layout-vertical
+  .qwerty-r.vertical
     .fingers
       +layout('default', [ 'y h n', 'u j m', 'i k ,', 'o l .', 'p ; /' ])
       +layout(1, [ '^ 6 [', '& 7 ]', '* 8 -', '( 9 _', ') 0 =' ])
