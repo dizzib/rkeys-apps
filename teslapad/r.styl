@@ -1,20 +1,16 @@
 @require 'mixin/keys'
 @require './base'
-@require '../keyboard/standard/qwerty'
 @require '../keyboard/compact/qwerty'
 
 qwerty-r(K)
 
 .desk-switcher
   position    fixed
-  right       0px
-  bottom      0px
+  right       0
+  bottom      0
   height      K
   z-index     100
   key-color(label-up:cyan, down:cyan)
-
-.numpad
-  margin-left K
 
 .pad-1
   background  #222
@@ -22,3 +18,7 @@ qwerty-r(K)
   right       0
   z-index     50
   key-color(label-up:yellow)
+
+.root
+  > div
+    margin-right  K

@@ -1,10 +1,6 @@
-.thumb
-  position    relative
-  top         -2em
-
-fingers(k, angle)
+fingers(k, tilt)
   .fingers
-    transform   rotate(angle)
+    transform   rotate(tilt * 10deg)
     .col-0
       margin-top  k * 0.5
     .col-1
@@ -14,22 +10,26 @@ fingers(k, angle)
       margin-top  k * 0.75
     {block}
 
+thumb(k, tilt)
+  .thumb
+    left        tilt * k * 0.75
+    position    relative
+    top         - k * 0.5
+    transform   rotate(tilt * 5deg)
+    {block}
+
 qwerty-l(k)
   .qwerty-l
-    key-size(k)
-    +fingers(k, 10deg)
-      margin-left k * 0.25
+    +fingers(k, 1)
+      margin-left     k * 0.25
       .layout > div
         float       right
-    .thumb
-      transform   rotate(5deg)
+    +thumb(k, 1)
       .key
         float       right
 
 qwerty-r(k)
   .qwerty-r
-    key-size(k)
-    +fingers(k, -10deg)
+    +fingers(k, -1)
       margin-right  k * 0.25
-    .thumb
-      transform   rotate(-5deg)
+    thumb(k, -1)
