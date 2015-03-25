@@ -1,50 +1,44 @@
-mixin layout(id, cols)
-  .horizontal.layout(class=id)
-    each col, i in cols
-      .key-cols-1(class='col-' + i)
-        +keys(col)
+mixin lanes(...lanes)
+  .lanes.horizontal
+    each l, i in lanes
+      .lane.key-cols-1(class='lane-' + i)
+        +keys(l)
 
 mixin qwerty-l
   .qwerty-l.vertical
-    .horizontal
-      .vertical.layout.default
-        +key('Super_R super')
-      .vertical.layout.1
-        +key('#').h-2
-      .vertical.layout.default
-        +key('Tab tab').w-2.h-2
+    .fingers.horizontal.layout.default
+      .vertical
+        +key('Tab tab').w-2.h-150
         +key('Shift_L shift').w-2.h-2
-      .vertical.layout.1
-        +key('|').w-2.h-2
+      +lanes("' t g b", 'r f v', 'e d c', 'w s x', 'q a z')
+    .fingers.horizontal.layout.1
+      .vertical
+        +key('|').w-2.h-150
         +key('^').w-2.h-2
-      .fingers
-        +layout('default', [ "' t g b", 'r f v', 'e d c', 'w s x', 'q a z' ])
-        +layout(1, [ '" % 5 =', '} 4 ]', '{ 3 [', '@ 2 ~', '! 1 \\' ])
+      +lanes('" % 5 +', '} 4 ]', '{ 3 [', '@ 2 ~', '! 1 \\')
     .thumb
       .layout.default
-        +key('BackSpace bksp').h-2.w-2
+        +key('BackSpace bksp').w-2
       .layout.1
-        +key('Delete del').h-2.w-2
-      +key('layout-1 fn').h-2.w-3
-      +key('Escape esc').h-2.w-2
+        +key('Delete del').w-2
+      +key('layout-1 fn').w-3
+      +key('Escape esc').w-2
+      +key('Super_R super')
 
 mixin qwerty-r
   .qwerty-r.vertical
-    .horizontal
-      .fingers
-        +layout('default', [ '; y h n', 'u j m', 'i k ,', 'o l .', 'p - /' ])
-        +layout(1, [ '+ ` 6 *', '< 7 (', '> 8 )', '& 9 .', '0 0 \\' ])
-      .vertical.layout.default
-        +key('Control_R ctrl').h-2.w-2
+    .fingers.horizontal.layout.default
+      +lanes('; y h n', 'u j m', 'i k ,', 'o l .', 'p - /')
+      .vertical
+        +key('Control_R ctrl').h-150.w-2
         +key('Shift_R shift').h-2.w-2
-      .vertical.layout.1
-        +key('*').w-2.h-2
-        +key('$').w-2.h-2
-      .vertical.layout.default
-        +key('Alt_R alt')
-      .vertical.layout.1
-        +key('"').h-2
+    .fingers.horizontal.layout.1
+      +lanes('# & 6 *', '< 7 (', '> 8 )', '` 9 .', '0 0 \\')
+      .vertical
+        +key('=').h-150.w-2
+        +key('$').h-2.w-2
     .thumb
-      +key('space', ' ').h-2.w-2
-      +key('layout-1 fn').h-2.w-3
-      +key('Return enter').h-2.w-2
+      +key('space', ' ').w-2
+      +key('layout-1 fn').w-3
+      +key('Return enter').w-2
+      +key('Alt_R alt')
