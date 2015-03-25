@@ -2,7 +2,7 @@ fingers(k, tilt)
   .fingers
     transform   rotate(tilt * 10deg)
     .col-0
-      margin-top  k * 0.5
+      margin-top  k * -0.5
     .col-1
     .col-3
       margin-top  k * 0.33
@@ -14,7 +14,7 @@ thumb(k, tilt)
   .thumb
     left        tilt * k * 0.75
     position    relative
-    top         - k * 0.5
+    top         k * -0.5
     transform   rotate(tilt * 5deg)
     {block}
 

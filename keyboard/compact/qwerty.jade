@@ -8,20 +8,18 @@ mixin qwerty-l
   .qwerty-l.vertical
     .horizontal
       .vertical.layout.default
-        +key('Tab tab').w-2
-        +key('Shift_L shift').w-2.h-3
+        +key('Super_R super')
+      .vertical.layout.1
+        +key('#').h-2
+      .vertical.layout.default
+        +key('Tab tab').w-2.h-2
+        +key('Shift_L shift').w-2.h-2
       .vertical.layout.1
         +key('|').w-2.h-2
         +key('^').w-2.h-2
       .fingers
-        +layout('default', [ 't g b', 'r f v', 'e d c', 'w s x', 'q a z' ])
-        +layout(1, [ '% 5 =', '} 4 ]', '{ 3 [', '@ 2 ~', '! 1 \\' ])
-      .vertical.layout.default
-        +key('-').h-2
-        +key('Tab tab').h-2
-      .vertical.layout.1
-        +key('_').h-2
-        +key('*').h-2
+        +layout('default', [ "' t g b", 'r f v', 'e d c', 'w s x', 'q a z' ])
+        +layout(1, [ '" % 5 =', '} 4 ]', '{ 3 [', '@ 2 ~', '! 1 \\' ])
     .thumb
       .layout.default
         +key('BackSpace bksp').h-2.w-2
@@ -33,23 +31,19 @@ mixin qwerty-l
 mixin qwerty-r
   .qwerty-r.vertical
     .horizontal
-      .vertical.layout.default
-        +key("'").h-2
-        +key('Control_R ctrl').h-2
-      .vertical.layout.1
-        +key('"').h-2
-        +key('+').h-2
       .fingers
-        +layout('default', [ 'y h n', 'u j m', 'i k ,', 'o l .', 'p ; /' ])
-        +layout(1, [ '` 6 :', '< 7 (', '> 8 )', '& 9 .', '0 0 \\' ])
+        +layout('default', [ '; y h n', 'u j m', 'i k ,', 'o l .', 'p - /' ])
+        +layout(1, [ '+ ` 6 *', '< 7 (', '> 8 )', '& 9 .', '0 0 \\' ])
       .vertical.layout.default
-        .horizontal
-          +key('Alt_R alt')
-          +key('Super_R super')
-        +key('Shift_R shift').w-2.h-3
+        +key('Control_R ctrl').h-2.w-2
+        +key('Shift_R shift').h-2.w-2
       .vertical.layout.1
         +key('*').w-2.h-2
         +key('$').w-2.h-2
+      .vertical.layout.default
+        +key('Alt_R alt')
+      .vertical.layout.1
+        +key('"').h-2
     .thumb
       +key('space', ' ').h-2.w-2
       +key('layout-1 fn').h-2.w-3
