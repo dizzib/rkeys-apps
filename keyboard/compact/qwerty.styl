@@ -1,22 +1,19 @@
 qwerty(k, tilt)
-  left      k * - tilt * 0.5
   position  relative
+  top       k * -0.33
+  left      k * - tilt * 0.5
   transform rotate(tilt * 10deg)
   width     k * 9
   .fingers
     pointer-events none  // for thumb underlay
     .lane
       pointer-events auto
-    .lane-0
-      margin-top k * -0.5
-    .lane-1
-    .lane-3
-      margin-top k * 0.33
-    .lane-4
-      margin-top k * 0.75
+    for stagger, i in -0.5 0.33 0 0.33 0.75
+      .lane-{i}
+        margin-top k * stagger
   .thumb
-    left      k * tilt
     position  relative
+    left      k * tilt
     top       - k
     z-index   -10
     .key
