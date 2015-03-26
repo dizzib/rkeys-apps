@@ -9,16 +9,18 @@ body
   background  #222
   color       white
   font-family arial
-  width       30 * K
+  width       20 * K
 
 .qwerty-l
 .qwerty-r
+  position    relative
+  z-index     150
   .thumb
     opacity     0.5
-    z-index     150
 
 .root
   height      6 * K
+  overflow    hidden
 
 .edit
   key-color(label-up:red)

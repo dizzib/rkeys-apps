@@ -1,42 +1,35 @@
-fingers(k, tilt)
-  .key.h-150
-    height    k * 1.5
-  .lanes
-    transform   rotate(tilt * 10deg)
+qwerty(k, tilt)
+  left      k * - tilt * 0.5
+  position  relative
+  transform rotate(tilt * 10deg)
+  width     k * 9
+  .fingers
+    pointer-events none  // for thumb underlay
+    .lane
+      pointer-events auto
     .lane-0
-      margin-top  k * -0.5
+      margin-top k * -0.5
     .lane-1
     .lane-3
-      margin-top  k * 0.33
+      margin-top k * 0.33
     .lane-4
-      margin-top  k * 0.75
-    {block}
-
-thumb(k, tilt)
+      margin-top k * 0.75
   .thumb
-    position    relative
-    left        k * tilt * 0.5
-    top         k * -0.25
-    transform   rotate(tilt * 5deg)
+    left      k * tilt
+    position  relative
+    top       - k
+    z-index   -10
     .key
-      height    k * 1.5
-    {block}
+      height    k * 2
 
 qwerty-l(k)
   .qwerty-l
+    qwerty(k, 1)
     .fingers
-      float       right
-    width       k * 8
-    +fingers(k, 1)
-      margin-left k * 0.25
-      .lane
-        float       right
-    +thumb(k, 1)
-      .key
-        float       right
+    .lane
+    .thumb .key
+      float     right
 
 qwerty-r(k)
   .qwerty-r
-    +fingers(k, -1)
-      margin-right  k * 0.25
-    thumb(k, -1)
+    qwerty(k, -1)
