@@ -10,12 +10,12 @@ mixin qwerty-l
       .vertical
         +key('Tab tab').w-2.h-150
         +key('Shift_L shift').w-2.h-2
-      +lanes("' t g b", 'r f v', 'e d c', 'w s x', 'q a z')
+      +lanes("' 5 t g b", '4 r f v', '3 e d c', '2 w s x', '1 q a z')
     .fingers.horizontal.layout.1
       .vertical
         +key('|').w-2.h-150
         +key('^').w-2.h-2
-      +lanes('" % 5 +', '} 4 ]', '{ 3 [', '@ 2 ~', '! 1 \\')
+      +lanes('" 5 % . +', '4 } ] "', "3 { [ '", '2 @ . ~', '1 ! . .')
     .thumb
       .layout.default
         +key('BackSpace bksp').w-2
@@ -28,12 +28,12 @@ mixin qwerty-l
 mixin qwerty-r
   .qwerty-r.vertical
     .fingers.horizontal.layout.default
-      +lanes('; y h n', 'u j m', 'i k ,', 'o l .', 'p - /')
+      +lanes('; 6 y h n', '7 u j m', '8 i k ,', '9 o l .', '0 p - /')
       .vertical
         +key('Control_R ctrl').h-150.w-2
         +key('Shift_R shift').h-2.w-2
     .fingers.horizontal.layout.1
-      +lanes('# & 6 *', '< 7 (', '> 8 )', '` 9 .', '0 0 \\')
+      +lanes('# 6 & . *', "7 < ( '", '8 > ) <', '9 ` . >', '0 . _ \\')
       .vertical
         +key('=').h-150.w-2
         +key('$').h-2.w-2
