@@ -1,7 +1,7 @@
 edit-copy   : C+c
 edit-cut    : C+x
 edit-paste  : C+v
-edit-redo   : C+S+z
+edit-redo   : C+y
 edit-save   : C+s
 edit-select : Home S+End
 edit-undo   : C+z
