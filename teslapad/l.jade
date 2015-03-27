@@ -4,7 +4,6 @@ include ../keyboard/compact/qwerty
 include ../speakeys/mixin
 include ./mixin/edit
 include ./mixin/firefox
-include ./mixin/pad-2
 include ./mixin/vlc-player
 
 append head
@@ -17,7 +16,13 @@ append layout
     .scrollpad.horizontal
       +show-if(activeWindowTitle='firefox|Vimperator|HERBERT|ROO|SWEEP')
         +firefox
-      +pad-2
+      .vertical
+        .vbox.key-cols-4
+          +key('vbox-fullscreen fa-arrows-alt')
+          +key('vbox-seamless fa-th-large')
+          +key('vbox-menu fa-navicon')
+          +key('vbox-scale fa-expand')
+        +edit
       .f1-f12.key-cols-3
         - for (var n = 1; n <= 12; n++)
           +key('F' + n)
