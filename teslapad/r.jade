@@ -2,7 +2,6 @@ extend /template/keys
 
 include ../keyboard/compact/qwerty
 include ../numpad/mixin
-include ./mixin/firefox
 include ./mixin/pad-1
 
 append head
@@ -16,8 +15,6 @@ append layout
       +pad-1
   .root.horizontal
     +qwerty-r
-    +show-if(activeWindowTitle='firefox|Vimperator|HERBERT|ROO|SWEEP')
-      +firefox
     +numpad
   .desk-switcher
     +key('B3', 'fa-hand-o-down fa-flip-horizontal')
