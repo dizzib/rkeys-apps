@@ -3,6 +3,7 @@ include:
   ../speakeys/command.yaml
   ./mixin/edit.yaml
   ./mixin/firefox.yaml
+  ./mixin/vim.yaml
   ./mixin/vlc-player.yaml
 
 desk-1: Super_R 100 A+S+F1

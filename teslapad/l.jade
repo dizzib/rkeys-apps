@@ -4,6 +4,7 @@ include ../keyboard/compact/qwerty
 include ../speakeys/mixin
 include ./mixin/edit
 include ./mixin/firefox
+include ./mixin/vim
 include ./mixin/vlc-player
 
 append head
@@ -16,6 +17,8 @@ append layout
     .scrollpad.horizontal
       +show-if(activeWindowTitle='firefox|Vimperator|HERBERT|ROO|SANDPIT|SWEEP')
         +firefox
+      +show-if(activeWindowTitle='TED')
+        +vim
       .vertical
         .vbox.key-cols-4
           +key('vbox-fullscreen fa-arrows-alt')
