@@ -1,9 +1,6 @@
 mixin speakeys
   .speakeys
-    .unavailable.horizontal
-      .button
-        i.fa.fa-4x.fa-microphone-slash
-      .text Speech recognition not supported in this browser.
+    .noscript.text speakeys script is missing!
     .available.horizontal
       .button.listen.enabled
         i.fa.fa-4x.fa-microphone
@@ -11,3 +8,7 @@ mixin speakeys
         i.fa.fa-4x.fa-check
       .text.buffer .
       .text.prompt Press the microphone icon to begin. Hold the tick icon to enter.
+    .unavailable.horizontal
+      .button
+        i.fa.fa-4x.fa-microphone-slash
+      .text Speech recognition not supported in this browser.

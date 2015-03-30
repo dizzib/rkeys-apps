@@ -1,7 +1,10 @@
-return unless (R = window.webkitSpeechRecognition)?
+R = window.webkitSpeechRecognition
 
-$ \.speakeys>.unavailable .hide!
-$ \.speakeys>.available .show!
+$ \.speakeys>.noscript .hide!
+$ \.speakeys>.available .show! if R?
+$ \.speakeys>.unavailable .show! unless R?
+
+return unless R?
 
 $s = $ '.speakeys'
 $b = $ '.speakeys .buffer'
