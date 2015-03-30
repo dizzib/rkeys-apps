@@ -43,6 +43,9 @@ r.onstart = ->
 $l.on \click ->
   return unless $l.hasClass \enabled
   r.start!
+$s.on \click ->
+  c = if /^[A-Z]/.test b = $b.text! then b.0.toLowerCase! else b.0.toUpperCase!
+  text $b, c + b.slice 1
 $t.on \touchend ->
   clearTimeout longclick-timeout
 $t.on \touchstart ->
