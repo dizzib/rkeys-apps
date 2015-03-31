@@ -6,17 +6,7 @@ include:
   ./mixin/vim.yaml
   ./mixin/vlc-player.yaml
 
-desk-1: Super_R 100 A+S+F1
-desk-2: Super_R 100 A+S+F2
-desk-3: Super_R 100 A+S+F3
-desk-4: Super_R 100 A+S+F4
-
-go-herbert: exec wmctrl -a HERBERT
-go-kango  : exec wmctrl -a KANGO
-go-roo    : exec wmctrl -a ROO
-go-sandpit: exec wmctrl -a SANDPIT
-go-sweep  : exec wmctrl -a SWEEP
-go-ted    : exec wmctrl -a TED
+desk: Super_R 100 A+S+F$0
 
 kde-kicker : Super_R 250 Super_L+a
 kde-konsole: exec konsole
@@ -26,6 +16,7 @@ vbox-menu       : Super_R+m
 vbox-scale      : Super_R+s
 vbox-seamless   : Super_R+l
 
+window          : exec wmctrl -a $0
 window-close    : A+F4
 window-minimize : Super_L+m
 window-next     : A+Tab
