@@ -24,8 +24,9 @@ mixin qwerty-l
         +key('^').w-2.h-2
     .thumb
       +key('space', ' ').w-2
-      +key('layout:fn fn').w-3
-      +key('Shift_L shift').w-3
+      .latching
+        +key('layout:fn fn').w-3
+        +key('Shift_L shift').w-3
 
 mixin qwerty-r
   .qwerty-r.vertical
@@ -44,5 +45,6 @@ mixin qwerty-r
         +key('$').h-2.w-2
     .thumb
       +key('space', ' ').w-2
-      +key('layout:fn fn').w-3
-      +key('Shift_R shift').w-3
+      .latching
+        +key('layout:fn fn').w-3
+        +key('Shift_R shift').w-3
