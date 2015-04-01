@@ -17,8 +17,7 @@ append layout
     .scrollpad.horizontal
       +show-if(activeWindowTitle='firefox|Vimperator|HERBERT|ROO|SANDPIT|SWEEP')
         +firefox
-      +show-if(activeWindowTitle='TED')
-        +vim
+      +show-if(activeWindowTitle='TED'): +vim
       .vertical
         .vbox.key-cols-4
           +key('vbox-fullscreen fa-arrows-alt')
@@ -30,8 +29,7 @@ append layout
         - for (var n = 1; n <= 12; n++)
           +key('F' + n)
   .root.horizontal
-    +show-if(activeWindowTitle='SWEEP')
-      +vlc-player
+    +show-if(activeWindowTitle='SWEEP'): +vlc-player
     +qwerty-l
   +speakeys
 
