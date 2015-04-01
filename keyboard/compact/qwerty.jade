@@ -4,21 +4,17 @@ mixin lane(n)
 
 mixin lanes(...lanes)
   each l, i in lanes
-    +lane(i)
-      +keys(l)
+    +lane(i): +keys(l)
 
 mixin qwerty-l
   .qwerty-l.vertical
     .fingers.horizontal.layout.default
       +lanes("F11 5 t g b", '4 r f v', '3 e d c', '2 w s x', '1 q a z')
-      +lane(5)
-        +keys('Tab tab', 'Escape esc').w-2.h-2
-      +lane(6)
-        +keys('Alt_L alt', 'Control_L ctrl').h-2
+      +lane(5): +keys('Tab tab', 'Escape esc').w-2.h-2
+      +lane(6): +keys('Alt_L alt', 'Control_L ctrl').h-2
     .fingers.horizontal.layout.fn
       +lanes('F11 F5 % = +', 'F4 } ] "', "F3 { [ '", 'F2 @ ~ `', 'F1 ! | .')
-      +lane(5)
-        +keys('|', '^').w-2.h-2
+      +lane(5): +keys('|', '^').w-2.h-2
     .thumb
       +key('space', ' ').w-2
       +keys('layout:fn fn', 'Shift_L shift').w-3.latching
@@ -27,14 +23,11 @@ mixin qwerty-r
   .qwerty-r.vertical
     .fingers.horizontal.layout.default
       +lanes('F12 6 y h n', '7 u j m', '8 i k ,', '9 o l .', '0 p - /')
-      +lane(5)
-        +keys('BackSpace bksp', 'Return enter').h-2.w-2
-      +lane(6)
-        +keys('Alt_R alt', 'Control_R ctrl').h-2
+      +lane(5): +keys('BackSpace bksp', 'Return enter').h-2.w-2
+      +lane(6): +keys('Alt_R alt', 'Control_R ctrl').h-2
     .fingers.horizontal.layout.fn
       +lanes('F12 F6 & = *', "F7 < ( '", 'F8 > ) <', 'F9 ; : >', 'F10 # _ \\')
-      +lane(5)
-        +keys('Delete del', '$').h-2.w-2
+      +lane(5): +keys('Delete del', '$').h-2.w-2
     .thumb
       +key('space', ' ').w-2
       +keys('layout:fn fn', 'Shift_R shift').w-3.latching
