@@ -7,6 +7,13 @@ It brings together the following:
     before transmitting to Linux
   - [keyboard](../keyboard/compact) - a split 'ergonomic' qwerty keyboard
   - a restyled [numpad](../numpad)
+  - scrollable sidepads
+  - context-sensitive to Vim, Firefox and VLC player
+
+I built this primarily to help relieve my [RSI] since it requires a
+much lighter touch to operate than a physical keyboard.
+I also wanted to downsize my 4 physical programmable/numeric keypads.
+So far I'm very happy with the result:
 
 ![screenshot-desk-1](http://dizzib.github.io/rkeys/teslapad/desk-1.png)
 
@@ -30,3 +37,6 @@ It brings together the following:
 left hand: `http://your-rkeys-server:7000/l`
 
 right hand: `http://your-rkeys-server:7000/r`
+
+
+[RSI]: https://en.wikipedia.org/wiki/Repetitive_strain_injury
