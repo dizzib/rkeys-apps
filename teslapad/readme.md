@@ -7,7 +7,7 @@ It brings together the following:
     before transmitting to Linux
   - [keyboard](../keyboard/compact) - a split 'ergonomic' qwerty keyboard
   - a restyled [numpad](../numpad)
-  - scrollable sidepads
+  - scrollable sidepads with shortcuts for [KDE Plasma desktop][KdePlasma] and [VirtualBox]
   - context-sensitive to Vim, Firefox and VLC player
 
 I built this primarily to help relieve my [RSI] since it requires a
@@ -38,5 +38,6 @@ left hand: `http://your-rkeys-server:7000/l`
 
 right hand: `http://your-rkeys-server:7000/r`
 
-
+[KdePlasma]: https://www.kde.org/workspaces/plasmadesktop/
 [RSI]: https://en.wikipedia.org/wiki/Repetitive_strain_injury
+[VirtualBox]: https://www.virtualbox.org/
