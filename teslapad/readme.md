@@ -5,10 +5,9 @@ It brings together the following:
 
   - [speakeys](../speakeys) lets you dictate sentences and quickly review the result
     before transmitting to Linux
-  - [keyboard](../keyboard/compact/qwerty) - a split ergonomic qwerty keyboard
+  - [keyboard](../keyboard/compact) - a split 'ergonomic' qwerty keyboard
   - a restyled [numpad](../numpad)
 
-Here's how it looks on my desk:
 ![screenshot-desk-1](http://dizzib.github.io/rkeys/teslapad/desk-1.png)
 
 ## screenshots
