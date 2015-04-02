@@ -19,3 +19,10 @@ mixin vlc-player
       +key('vlc-rewind fa-backward').h-2
       +key('vlc-play fa-play').h-2.w-2
       +key('vlc-fast-forward fa-forward').h-2
+
+mixin vlc-player-compact
+  .vlc-player
+    .key-cols-4
+      +key('vlc-play fa-play')
+      +key('vlc-previous fa-step-backward')
+      +key('vlc-next fa-step-forward')
