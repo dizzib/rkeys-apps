@@ -9,7 +9,7 @@ mixin lanes(...lanes)
 mixin thumb
   .thumb
     +key('space', ' ').w-2
-    +keys('layout:fn fn', 'Shift_L shift').w-3.latching
+    +keys('layout:fn fn', 'Shift_L shift').w-3.latchable
 
 mixin wings(k1, k2)
   +lane(5): +keys(k1, k2).w-2.h-2
