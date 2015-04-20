@@ -22,3 +22,10 @@ window-minimize : Super_L+m
 window-next     : A+Tab
 window-resize-h : Super_L+h
 window-resize-v : Super_L+v
+
+# sidechain
+/^(button|desk|ffx|kde|vbox|window)/: PLAY-SOUND SFX-BLIP
+/^(layout)/: [ PLAY-SOUND SFX-TICK, PLAY-SOUND SFX-TOCK ]
+/.*/: PLAY-SOUND SFX-NOISE
+
+PLAY-SOUND: alias exec aplay --quiet
