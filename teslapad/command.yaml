@@ -1,10 +1,4 @@
-include:
-  ../numpad/command.yaml
-  ../speakeys/command.yaml
-  ./mixin/edit.yaml
-  ./mixin/firefox.yaml
-  ./mixin/vim.yaml
-  ./mixin/vlc-player.yaml
+include: ../numpad ../speakeys ./mixin
 
 desk: Super_R 100 A+S+F$0
 
