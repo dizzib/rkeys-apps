@@ -22,4 +22,4 @@ window-resize-v : Super_L+v
 /^(layout)/: [ PLAY-SOUND SFX-TICK, PLAY-SOUND SFX-TOCK ]
 /.*/: PLAY-SOUND SFX-NOISE
 
-PLAY-SOUND: alias exec aplay --quiet
+PLAY-SOUND: alias exec play -V1 -q --volume 0.25
