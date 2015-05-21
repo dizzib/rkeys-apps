@@ -1,4 +1,4 @@
-include: ../numpad ../speakeys ./mixin
+include: ../keyboard ../numpad ../speakeys ./mixin
 
 desk: Super_R 100 A+S+F$0
 
@@ -23,3 +23,6 @@ window-resize-v : Super_L+v
 /.*/: PLAY-SOUND SFX-NOISE
 
 PLAY-SOUND: alias exec play -V1 -q --volume 0.25
+
+# compose key alias (redefine as requied)
+COMPOSE: alias Super_L

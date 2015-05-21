@@ -1,0 +1,3 @@
+# composed symbols for US keyboard layout
+# NOTE: you'll need to define the COMPOSE alias to match your system
+'£': COMPOSE l XK_minus
