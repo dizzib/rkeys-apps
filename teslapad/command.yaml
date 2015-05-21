@@ -24,5 +24,5 @@ window-resize-v : Super_L+v
 
 PLAY-SOUND: alias exec play -V1 -q --volume 0.25
 
-# compose key alias (redefine as requied)
+# compose key alias (redefine as required)
 COMPOSE: alias Super_L
