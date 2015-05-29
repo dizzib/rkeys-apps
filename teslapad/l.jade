@@ -26,10 +26,10 @@ append layout
           +key('vbox-scale fa-expand')
         +edit
         +show-if(activeWindowTitle='HERBERT|SWEEP'): +vlc-player-compact
-      .f1-f12.key-cols-3
-        - for (var n = 1; n <= 12; n++)
-          +key('F' + n)
   .root.horizontal
+    .key-cols-2
+      - for (var n = 1; n <= 10; n++)
+        +key('F' + n)
     +show-if(activeWindowTitle='HERBERT|SWEEP'): +vlc-player
     +qwerty-l
   .workspace-switcher
