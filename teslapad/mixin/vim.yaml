@@ -1,2 +1,3 @@
-vim-indent : greater 50 greater
-vim-outdent: less 50 less
+vim-fold-toggle: z a
+vim-indent     : greater 50 greater
+vim-outdent    : less 50 less
