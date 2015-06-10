@@ -17,7 +17,7 @@ r = new R!
 socket = io!
 
 r.onend = ->
-  socket.emit \keydown, \speakeys-onend
+  socket.emit \rkeydown, \speakeys-onend
   enable-button $l
   $s.removeClass \live
 r.onerror = ->
@@ -37,7 +37,7 @@ r.onstart = ->
   $p.show!
   enable-button $l, false
   enable-button $t, false
-  socket.emit \keydown, \speakeys-onstart
+  socket.emit \rkeydown, \speakeys-onstart
   text $p, 'Google is listening!'
 
 $l.on \click ->
@@ -53,7 +53,7 @@ $t.on \touchstart ->
   const START-PHRASE-RX = /^[\.\?!,]/
   seq = $b.text! / '' ++ [ ' ' ]
   seq.unshift \BackSpace if START-PHRASE-RX.test t = $b.text! # erase last space?
-  socket.emit \keyseq, seq
+  socket.emit \rkeyseq, seq
   longclick-timeout := setTimeout (-> socket.emit \keyseq, <[ Return ]>), 750ms
   false
 
