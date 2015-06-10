@@ -54,7 +54,7 @@ $t.on \touchstart ->
   seq = $b.text! / '' ++ [ ' ' ]
   seq.unshift \BackSpace if START-PHRASE-RX.test t = $b.text! # erase last space?
   socket.emit \rkeyseq, seq
-  longclick-timeout := setTimeout (-> socket.emit \keyseq, <[ Return ]>), 750ms
+  longclick-timeout := setTimeout (-> socket.emit \rkeyseq, <[ Return ]>), 750ms
   false
 
 function enable-button $el, enabled = true then $el.toggleClass \enabled, enabled
