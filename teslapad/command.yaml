@@ -18,6 +18,6 @@ window-resize-h : Super_L+h
 window-resize-v : Super_L+v
 
 # sidechain
-/^(button|desk|ffx|kde|vbox|window)/: PLAY-SOUND SFX-BLIP
+/^(A+|C+|S+|button|desk|kde|window)/: PLAY-SOUND SFX-BLIP
 /^(layout)/: [ PLAY-SOUND SFX-TICK, PLAY-SOUND SFX-TOCK ]
 /.*/: PLAY-SOUND SFX-NOISE
