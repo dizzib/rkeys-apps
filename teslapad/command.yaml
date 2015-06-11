@@ -1,4 +1,4 @@
-include: ../keyboard ../numpad ../speakeys ./mixin
+include: ../keyboard ../numpad ../speakeys
 
 # aliases
 COMPOSE     : alias Scroll_Lock
