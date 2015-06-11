@@ -20,11 +20,11 @@ mixin thumb(hand)
 mixin qwerty-l
   .qwerty-l.vertical
     .fingers.horizontal.layout.default
-      +lanes("F11 5 t g b", '4 r f v', '3 e d c', '2 w s x', '1 q a z')
+      +lanes("F11 5 t g b", '4 r f v', '3 e d c', '2 w s x', '1 q a z +')
       +lane5('Tab tab', 'Escape esc')
       +lane6('L')
     .fingers.horizontal.layout.fn
-      +lanes('F11 F5 % = +', 'F4 } ] "', "F3 { [ '", 'F2 @ ~ `', 'F1 ! | £')
+      +lanes('F11 F5 % = +', 'F4 } ] "', "F3 { [ '", 'F2 @ ~ `', 'F1 ! | £ +')
       +lane5('|', '^')
       +lane6('L')
     +thumb('L')
@@ -32,11 +32,11 @@ mixin qwerty-l
 mixin qwerty-r
   .qwerty-r.vertical
     .fingers.horizontal.layout.default
-      +lanes('F12 6 y h n', '7 u j m', '8 i k ,', '9 o l .', '0 p : /')
+      +lanes('F12 6 y h n', '7 u j m', '8 i k ,', '9 o l .', '0 p : / -')
       +lane5('BackSpace bksp', 'Return enter')
       +lane6('R')
     .fingers.horizontal.layout.fn
-      +lanes('F12 F6 & = *', "F7 < ( '", 'F8 > ) <', 'F9 ; - >', 'F10 # _ \\')
+      +lanes('F12 F6 & = *', "F7 < ( '", 'F8 > ) <', 'F9 ; - >', 'F10 # _ \\ -')
       +lane5('Delete del', '$')
       +lane6('R')
     +thumb('R')
