@@ -10,13 +10,6 @@ desk       : VBOX-RELEASE A+S+F$0
 kde-kicker : VBOX-RELEASE Super_L+a
 kde-konsole: exec konsole
 
-window          : exec wmctrl -a $0
-window-close    : A+F4
-window-minimize : Super_L+m
-window-next     : A+Tab
-window-resize-h : Super_L+h
-window-resize-v : Super_L+v
-
 # sidechain
 /^(A+|C+|S+|button|desk|kde|window)/: PLAY-SOUND SFX-BLIP
 /^(layout)/: [ PLAY-SOUND SFX-TICK, PLAY-SOUND SFX-TOCK ]
