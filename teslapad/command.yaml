@@ -10,11 +10,6 @@ desk       : VBOX-RELEASE A+S+F$0
 kde-kicker : VBOX-RELEASE Super_L+a
 kde-konsole: exec konsole
 
-vbox-fullscreen : VBOX-HOST+f
-vbox-menu       : VBOX-HOST+m
-vbox-scale      : VBOX-HOST+s
-vbox-seamless   : VBOX-HOST+l
-
 window          : exec wmctrl -a $0
 window-close    : A+F4
 window-minimize : Super_L+m

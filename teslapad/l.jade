@@ -4,6 +4,7 @@ include ../keyboard/compact/qwerty
 include ../speakeys/mixin
 include ./mixin/edit
 include ./mixin/firefox
+include ./mixin/vbox
 include ./mixin/vim
 include ./mixin/vlc-player
 
@@ -19,11 +20,7 @@ append layout
         +firefox
       +show-if(activeWindowTitle='TED|SWEEP'): +vim
       .vertical
-        .vbox.key-cols-4
-          +key('vbox-seamless fa-th-large')
-          +key('vbox-fullscreen fa-arrows-alt')
-          +key('vbox-menu fa-navicon')
-          +key('vbox-scale fa-expand')
+        +vbox
         +edit
         +show-if(activeWindowTitle='HERBERT|SWEEP'): +vlc-player-compact
   .root.horizontal
