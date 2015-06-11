@@ -1,28 +1,37 @@
+mixin next
+  +key('C+S+n vlc-next fa-step-forward')
+
+mixin play
+  +key('C+S+g vlc-play fa-play')&attributes(attributes)
+
+mixin previous
+  +key('C+S+p vlc-previous fa-step-backward')
+
 mixin vlc-player
   .vlc-player
     .key-cols-4
       +key('Escape Esc')
-      +key('vlc-open-file fa-file-video-o')
-      +key('vlc-open-folder fa-folder-open-o')
+      +key('C+o vlc-open-file fa-file-video-o')
+      +key('C+f vlc-open-folder fa-folder-open-o')
       +key('Return Enter')
 
     .key-cols-3
-      +key('vlc-volume-down fa-volume-down')
-      +key('vlc-stop fa-stop').w-2
-      +key('vlc-volume-up fa-volume-up')
+      +key('C+S+d vlc-volume-down fa-volume-down')
+      +key('C+S+s vlc-stop fa-stop').w-2
+      +key('C+S+u vlc-volume-up fa-volume-up')
 
-      +key('vlc-previous fa-step-backward')
-      +key('vlc-fullscreen fa-desktop').w-2
-      +key('vlc-next fa-step-forward')
+      +previous
+      +key('f vlc-fullscreen fa-desktop').w-2
+      +next
 
     .key-cols-3
-      +key('vlc-rewind fa-backward').h-2
-      +key('vlc-play fa-play').h-2.w-2
-      +key('vlc-fast-forward fa-forward').h-2
+      +key('C+S+b vlc-rewind fa-backward').h-2
+      +play.h-2.w-2
+      +key('C+S+f vlc-fast-forward fa-forward').h-2
 
 mixin vlc-player-compact
   .vlc-player
     .key-cols-4
-      +key('vlc-play fa-play')
-      +key('vlc-previous fa-step-backward')
-      +key('vlc-next fa-step-forward')
+      +play
+      +previous
+      +next

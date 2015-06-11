@@ -6,9 +6,14 @@ PLAY-SOUND  : alias exec play -V1 -q --volume 0.25 # SoX
 VBOX-HOST   : alias Super_R
 VBOX-RELEASE: alias Super_R 100 # time delay required before subsequent keys
 
-desk       : VBOX-RELEASE A+S+F$0
-kde-kicker : VBOX-RELEASE Super_L+a
-kde-konsole: exec konsole
+# sequences
+desk           : VBOX-RELEASE A+S+F$0
+edit-select    : Home S+End
+kde-kicker     : VBOX-RELEASE Super_L+a
+kde-konsole    : exec konsole
+vim-fold-toggle: z a
+vim-indent     : greater 50 greater
+vim-outdent    : less 50 less
 
 # sidechain
 /^(A+|C+|S+|button|desk|kde|window)/: PLAY-SOUND SFX-BLIP

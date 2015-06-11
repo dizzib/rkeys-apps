@@ -22,12 +22,12 @@ append layout
       .vertical
         +vbox
         +edit
-        +show-if(activeWindowTitle='HERBERT|SWEEP'): +vlc-player-compact
+        +show-if(activeWindowTitle='HERBERT|SANDPIT|SWEEP'): +vlc-player-compact
   .root.horizontal
     .key-cols-2
       - for (var n = 1; n <= 10; n++)
         +key('F' + n)
-    +show-if(activeWindowTitle='HERBERT|SWEEP'): +vlc-player
+    +show-if(activeWindowTitle='HERBERT|SANDPIT|SWEEP'): +vlc-player
     +qwerty-l
   .workspace-switcher
     +key('C+F12 fa-exchange')
