@@ -1,11 +1,11 @@
 mixin vim
   .vim.key-cols-2
-    +key('vim-outdent fa-outdent')
-    +key('vim-indent fa-indent')
+    +key('<,50,< outdent fa-outdent')
+    +key('>,50,> indent fa-indent')
     // vim-expand-region
     +key('_ fa-minus-square-o')
     +key('+ fa-plus-square-o')
     +key('V')
     +key('C+r redo fa-undo fa-flip-horizontal')
-    +key('vim-fold-toggle fa-toggle-down')
+    +key('z,a fold/unfold fa-toggle-down')
     +key('C+p auto complete fa-ellipsis-h')
