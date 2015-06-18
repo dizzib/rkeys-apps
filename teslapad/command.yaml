@@ -9,6 +9,8 @@ VBOX-RELEASE: alias Super_R 100 # time delay required before subsequent keys
 # custom commands
 desk   : VBOX-RELEASE A+S+F$0
 konsole: exec konsole
+fd-date: livescript (require \moment)!subtract months:1 .$0Of \month
+  .format \DD/MM/YYYY .split('').join ',05,'
 
 # sidechain
 /^(A+|C+|S+|button|desk|kde|window)/: PLAY-SOUND SFX-BLIP
