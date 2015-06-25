@@ -51,11 +51,15 @@ $t.on \touchend ->
 $t.on \touchstart ->
   return unless $t.hasClass \enabled
   const START-PHRASE-RX = /^[\.\?!,]/
-  ks = $b.text! / '' ++ [ ' ' ]
-  ks.unshift \BackSpace if START-PHRASE-RX.test t = $b.text! # erase last space?
-  socket.emit \rkeystrokes, ks
-  longclick-timeout := setTimeout (-> socket.emit \rkeystrokes, <[ Return ]>), 750ms
+  emit-keystroke \BackSpace if START-PHRASE-RX.test t = $b.text! # truncate previous phrase?
+  socket.emit \rkeydown "type:#t "
+  longclick-timeout := setTimeout (-> emit-keystroke \Return), 750ms
   false
 
+function emit-keystroke
+  socket.emit \rkeydown it
+  socket.emit \rkeyup it
+
 function enable-button $el, enabled = true then $el.toggleClass \enabled, enabled
+
 function text $el, t then $el.text t
