@@ -1,10 +1,13 @@
+mixin browser
+  +key('C+KP_Subtract page-zoom-out fa-search-minus')
+  +key('C+KP_Add page-zoom-in fa-search-plus')
+  +key('A+Left nav-back fa-angle-double-left')
+  +key('A+Right nav-forward fa-angle-double-right')
+
 mixin firefox
   .firefox.key-cols-2
     +key('F11 fullscreen fa-desktop')
     +key('C+F4 tab-close fa-close')
-    +key('C+KP_Subtract page-zoom-out fa-search-minus')
-    +key('C+KP_Add page-zoom-in fa-search-plus')
-    +key('A+Left nav-back fa-angle-double-left')
-    +key('A+Right nav-forward fa-angle-double-right')
+    +browser
     +key('C+A+b bym-invert fa-adjust')
     +key('C+S+e tab-groups fa-th')

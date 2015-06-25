@@ -16,9 +16,12 @@ append head
 append layout
   .sidepad
     .scrollpad.horizontal
-      +show-if(activeWindowTitle='Firefox|Vimperator|HERBERT|KANGO|ROO|SANDPIT|SWEEP')
+      +show-if(activeWindowTitle='Firefox|Vimperator|HERBERT|KANGO|ROO|SANDPIT')
         +firefox
-      +show-if(activeWindowTitle='Konsole|TED|SWEEP'): +vim
+      +show-if(activeWindowTitle='Dolphin|File Manager')
+        .browser.key-cols-2
+          +browser
+      +show-if(activeWindowTitle='GVIM|Konsole|Terminal|^Vim|TED'): +vim
       .vertical
         +vbox
         +edit
