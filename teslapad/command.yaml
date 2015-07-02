@@ -3,6 +3,7 @@ include: ../keyboard ../speakeys
 # aliases
 COMPOSE     : alias Scroll_Lock
 PLAY-SOUND  : alias exec play -V1 -q --volume 0.25 # SoX
+TYPE-DELAY  : alias 10 # slow down typing to avoid missed chars
 VBOX-HOST   : alias Super_R
 VBOX-RELEASE: alias Super_R 100 # time delay required before subsequent keys
 
@@ -10,7 +11,7 @@ VBOX-RELEASE: alias Super_R 100 # time delay required before subsequent keys
 desk   : VBOX-RELEASE A+S+F$0
 konsole: exec konsole
 fd-date: livescript (require \moment)!subtract months:1 .$0Of \month
-  .format \DD/MM/YYYY .split('').join ',05,'
+  .format \DD/MM/YYYY .split('').join ',10,'
 
 # sidechain
 /^(A+|C+|S+|button|desk|kde|window)/: PLAY-SOUND SFX-BLIP
