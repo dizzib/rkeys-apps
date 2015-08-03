@@ -14,10 +14,9 @@ $t = $ '.speakeys .transmit'
 
 var longclick-timeout
 r = new R!
-socket = io!
 
 r.onend = ->
-  socket.emit \rkeydown, \speakeys-onend
+  ws-send \rkeydown \speakeys-onend
   enable-button $l
   $s.removeClass \live
 r.onerror = ->
@@ -37,7 +36,7 @@ r.onstart = ->
   $p.show!
   enable-button $l, false
   enable-button $t, false
-  socket.emit \rkeydown, \speakeys-onstart
+  ws-send \rkeydown \speakeys-onstart
   text $p, 'Google is listening!'
 
 $l.on \click ->
@@ -52,13 +51,13 @@ $t.on \touchstart ->
   return unless $t.hasClass \enabled
   const START-PHRASE-RX = /^[\.\?!,]/
   emit-keystroke \BackSpace if START-PHRASE-RX.test t = $b.text! # truncate previous phrase?
-  socket.emit \rkeydown "type:#t "
+  ws-send \rkeydown "type:#t "
   longclick-timeout := setTimeout (-> emit-keystroke \Return), 750ms
   false
 
 function emit-keystroke
-  socket.emit \rkeydown it
-  socket.emit \rkeyup it
+  ws-send \rkeydown it
+  ws-send \rkeyup it
 
 function enable-button $el, enabled = true then $el.toggleClass \enabled, enabled
 
