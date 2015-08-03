@@ -1,0 +1,9 @@
+MPREV: alias (require \moment)!subtract months:1
+
+fd-date: livescript MPREV .$0Of \month .format \DD/MM/YYYY .split('').join ',10,'
+
+fi-move-csv: livescript
+  [c.replace \_ \space for c in "./move-csv_#{MPREV .format \YYMM}"].join ',10,'
+
+fi-stage: livescript
+  [c.replace \_ \space for c in "./stage_#{MPREV .format \YYMM}"].join ',10,'
