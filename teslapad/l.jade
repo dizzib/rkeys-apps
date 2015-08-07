@@ -16,16 +16,16 @@ append head
 append layout
   .sidepad
     .scrollpad.horizontal
-      +show-if(activeWindowTitle='Firefox|Vimperator|HERBERT|KANGO|ROO|SANDPIT')
+      +show-if(activeWindowTitle='Firefox|Vimperator|TigerVNC|HERBERT|KANGO|ROO|SANDPIT')
         +firefox
       +show-if(activeWindowTitle='Dolphin|File Manager')
         .browser.key-cols-2
           +browser
-      +show-if(activeWindowTitle='GVIM|Konsole|Terminal|^Vim|TED'): +vim
+      +show-if(activeWindowTitle='GVIM|Konsole|Terminal|^Vim|TigerVNC|TED'): +vim
+      +show-if(activeWindowTitle='HERBERT|SANDPIT|SWEEP'): +vlc-player-compact
       .vertical
         +vbox
         +edit
-        +show-if(activeWindowTitle='HERBERT|SANDPIT|SWEEP'): +vlc-player-compact
   .root.horizontal
     .key-cols-2
       - for (var n = 1; n <= 10; n++)
