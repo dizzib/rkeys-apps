@@ -1,0 +1,22 @@
+@require 'mixin/keys'
+@require './base'
+
+key-record()
+  .record
+    key-color(label-up:red, down:red)
+
+.reaper
+  key-record()
+  .marker
+    key-color(label-up:blue)
+  .track
+    key-color(label-up:orange)
+  .transport
+    key-color(label-up:yellow)
+    key-record()
+
+.vlc-player
+  key-color(label-up:cyan)
+
+.youtube
+  key-color(label-up:orange)

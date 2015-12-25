@@ -1,0 +1,16 @@
+extend /template/keys
+
+include ../media/reaper
+include ../media/vlc-player
+include ../media/youtube
+
+append head
+  title teslapad - music studio
+  +prevent-zoom
+  +css('media.css')
+
+append layout
+  .root.horizontal
+    +show-if(activeWindowTitle='BUD'): +reaper
+    +show-if(activeWindowTitle='HERBERT|SANDPIT|SWEEP'): +vlc-player
+    +show-if(activeWindowTitle='Firefox|Vimperator|plugin-container|HERBERT'): +youtube

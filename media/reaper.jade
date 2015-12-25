@@ -1,0 +1,27 @@
+mixin k(args)
+  +key(args).h-2.w-2
+
+mixin reaper
+  .reaper.vertical
+    .horizontal
+      .record
+        +key('C+S+1 1').h-2
+        +key('C+S+2 2').h-2
+        +key('C+S+3 3').h-2
+        +key('C+S+4 4').h-2
+      .track
+        +k('- fa-search-minus')
+        +k('+ fa-search-plus')
+    .horizontal
+      span.record
+        +k('C+r fa-circle')
+      .marker
+        +k('[ fa-step-backward')
+        +k('m fa-caret-square-o-down')
+        +k('] fa-step-forward')
+    .transport
+      +k('C+Left fa-backward')
+      +k('Return fa-pause')
+      +k('space fa-play')
+      +k('C+Right fa-forward')
+      +k('r loop fa-refresh')
