@@ -1,0 +1,20 @@
+mixin file-manager
+  +nav
+  +zoom
+  +key('F5 reload fa-refresh')
+
+mixin firefox
+  +key('F11 fullscreen fa-desktop')
+  +key('C+F4 tab-close fa-close')
+  +zoom
+  +nav
+  +key('C+A+b bym-invert fa-adjust')
+  +key('C+S+e tab-groups fa-th')
+
+mixin nav
+  +key('A+Left nav-back fa-angle-double-left')
+  +key('A+Right nav-forward fa-angle-double-right')
+
+mixin zoom
+  +key('C+KP_Subtract page-zoom-out fa-search-minus')
+  +key('C+KP_Add page-zoom-in fa-search-plus')

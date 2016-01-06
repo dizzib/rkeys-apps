@@ -3,8 +3,8 @@ extend /template/keys
 include ../keyboard/compact/qwerty
 include ../media/vlc-player
 include ../speakeys/mixin
+include ./mixin/browser
 include ./mixin/edit
-include ./mixin/firefox
 include ./mixin/vbox
 include ./mixin/vim
 
@@ -16,11 +16,11 @@ append head
 append layout
   .sidepad
     .scrollpad.horizontal
-      +show-if(activeWindowTitle='Firefox|Vimperator|TigerVNC|HERBERT|KANGO|ROO|SANDPIT')
-        +firefox
-      +show-if(activeWindowTitle='Dolphin|File Manager')
-        .browser.key-cols-2
-          +browser
+      .browser.key-cols-2
+        +show-if(activeWindowTitle='Firefox|Vimperator|TigerVNC|HERBERT|KANGO|ROO|SANDPIT')
+          +firefox
+        +show-if(activeWindowTitle='Dolphin|File Manager'): +file-manager
+      +show-if(activeWindowTitle='\.pdf'): +zoom
       +show-if(activeWindowTitle='GVIM|Konsole|Terminal|^Vim|TigerVNC|TED'): +vim
       +show-if(activeWindowTitle='HERBERT|SANDPIT|SWEEP'): +vlc-player-compact
       .vertical
