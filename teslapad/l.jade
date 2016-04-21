@@ -22,7 +22,7 @@ append layout
         +show-if(activeWindowTitle='Dolphin|File Manager'): +file-manager
       +show-if(activeWindowTitle='\.pdf'): +zoom
       +show-if(activeWindowTitle='GVIM|Konsole|Terminal|^Vim|TigerVNC|TED'): +vim
-      +show-if(activeWindowTitle='HERBERT|SANDPIT|SWEEP'): +vlc-player-compact
+      +show-if(activeWindowTitle='JOB|SANDPIT|SWEEP'): +vlc-player-compact
       .vertical
         +vbox
         +edit
@@ -30,7 +30,7 @@ append layout
     .key-cols-2
       - for (var n = 1; n <= 10; n++)
         +key('F' + n)
-    +show-if(activeWindowTitle='HERBERT|SANDPIT|SWEEP'): +vlc-player
+    +show-if(activeWindowTitle='JOB|SANDPIT|SWEEP'): +vlc-player
     +qwerty-l
   .workspace-switcher
     +key('C+F12 fa-exchange')
