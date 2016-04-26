@@ -2,7 +2,7 @@ include: ../keyboard ../speakeys ./mixin
 
 # aliases
 COMPOSE     : alias Scroll_Lock
-PLAY-SOUND  : alias exec play -V1 -q --volume 0.25 # SoX
+PLAY-SOUND  : alias exec play -V1 -q --rate 44100 --volume 0.25 # SoX
 TYPE-DELAY  : alias 10 # slow down typing to avoid missed chars
 VBOX-HOST   : alias Super_R
 VBOX-RELEASE: alias Super_R 100 # time delay required before subsequent keys
