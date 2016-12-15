@@ -3,6 +3,8 @@ extend /template/keys
 include ../media/reaper
 include ../media/vlc-player
 include ../media/youtube
+include ./mixin/browser
+include ./mixin/edit
 
 append head
   title teslapad - music studio
@@ -12,5 +14,11 @@ append head
 append layout
   .root.horizontal
     +show-if(activeWindowTitle='BUD'): +reaper
+    +show-if(activeWindowTitle='JOB')
+      .vertical
+        +edit
+        .browser.horizontal
+          +zoom
+          +nav
     +show-if(activeWindowTitle='JOB|SANDPIT|SWEEP'): +vlc-player
     +show-if(activeWindowTitle='Firefox|Vimperator|plugin-container|HERBERT|SANDPIT'): +youtube
